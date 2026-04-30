@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STOFFA s.r.o. — Sample Book Manufacturing at World-Class Level</title>
+  <meta name="description" content="Stoffa s.r.o. designs and manufactures textile sample books for leading fabric producers and fashion brands. Precision, quality, and on-time delivery are our standard." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css?v=4" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="progress-bar" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header id="header">
+    <div class="container">
+      <div class="header-inner">
+
+        <!-- Logo -->
+        <a href="index-en.html" class="logo" aria-label="STOFFA — Homepage">
+          <img src="assets/logo-white.png" alt="Stoffa" class="logo-white" />
+          <img src="assets/logo-color.png" alt="Stoffa" class="logo-color" />
+        </a>
+
+        <!-- Nav -->
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#why">Why Stoffa</a></li>
+            <li><a href="#references">References</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Language + Hamburger -->
+        <div style="display:flex;align-items:center;gap:20px;">
+          <div class="lang-switcher" aria-label="Language switcher">
+            <a href="index.html">CZ</a>
+            <span aria-hidden="true">|</span>
+            <a href="index-en.html" class="active" aria-current="page">EN</a>
+          </div>
+          <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation">
+    <button class="mobile-menu-close" aria-label="Close menu">&times;</button>
+    <nav>
+      <ul class="mobile-menu-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why Stoffa</a></li>
+        <li><a href="#references">References</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu-lang">
+      <a href="index.html">CZ</a>
+      <a href="index-en.html" class="active">EN</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section id="hero" aria-label="Hero section">
+
+      <video autoplay muted loop playsinline aria-hidden="true">
+        <source src="assets/hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <h1>Sample Book Manufacturing<br>at World-Class Level</h1>
+        <div class="hero-subtext-wrap" aria-live="polite">
+          <p class="hero-subtext active">Precision in every detail.</p>
+          <p class="hero-subtext">Modern technology. On-time delivery.</p>
+          <p class="hero-subtext">The reliable partner for the textile industry.</p>
+        </div>
+        <a href="#services" class="btn btn-ghost">Our Services</a>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </div>
+
+    </section>
+
+    <!-- ============================================================
+         ABOUT
+         ============================================================ -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-text">
+            <span class="section-label reveal">About the company</span>
+            <h2 id="about-heading" class="reveal reveal-d1">About Us</h2>
+
+            <p class="reveal reveal-d2">
+              Stoffa s.r.o. was founded with a single vision: to manufacture sample
+              books that serve not just as practical tools, but as true statements of
+              quality. In a market that prioritizes speed, we choose precision.
+            </p>
+            <p class="reveal reveal-d3">
+              Our sample books are produced in the Czech Republic, combining modern
+              production technology with an uncompromising attention to detail. Every
+              piece that leaves our facility is the result of expertise and deep respect
+              for material and craft.
+            </p>
+            <p class="reveal reveal-d3">
+              We work with designers, fabric manufacturers, fashion brands, and
+              distributors — everyone who understands that presentation is as
+              important as the product itself.
+            </p>
+
+            <div class="stats-row">
+              <div class="stat-block reveal">
+                <div class="stat-number">B2B</div>
+                <div class="stat-label">Exclusive Focus</div>
+              </div>
+              <div class="stat-block reveal reveal-d1">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Custom Manufacturing</div>
+              </div>
+              <div class="stat-block reveal reveal-d2">
+                <div class="stat-number">CZ</div>
+                <div class="stat-label">Made in Czech Republic</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-image-wrap reveal reveal-d2">
+            <img
+              src="assets/photo-01.avif"
+              alt="Stacks of textile sample books in various colours — Stoffa production detail"
+              class="section-img"
+              loading="lazy"
+            />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery carousel -->
+    <div class="gallery-carousel" aria-hidden="true">
+      <div class="gallery-track">
+        <div class="gallery-slide"><img src="assets/photo-04.jpg" alt="Colour range of threads" /></div>
+        <div class="gallery-slide"><img src="assets/photo-07.avif" alt="Textile colour samples" /></div>
+        <div class="gallery-slide"><img src="assets/photo-08.jpg" alt="Folded fabric samples" /></div>
+        <div class="gallery-slide"><img src="assets/photo-05.jpg" alt="Textile samples" /></div>
+        <div class="gallery-slide"><img src="assets/photo-06.jpg" alt="Fabric detail" /></div>
+        <!-- Duplicate for seamless loop -->
+        <div class="gallery-slide"><img src="assets/photo-04.jpg" alt="" /></div>
+        <div class="gallery-slide"><img src="assets/photo-07.avif" alt="" /></div>
+        <div class="gallery-slide"><img src="assets/photo-08.jpg" alt="" /></div>
+        <div class="gallery-slide"><img src="assets/photo-05.jpg" alt="" /></div>
+        <div class="gallery-slide"><img src="assets/photo-06.jpg" alt="" /></div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         SERVICES
+         ============================================================ -->
+    <section id="services" aria-labelledby="services-heading">
+      <div class="container">
+
+        <div class="services-header">
+          <span class="section-label reveal">What we offer</span>
+          <h2 id="services-heading" class="reveal reveal-d1">Our Services</h2>
+          <p class="reveal reveal-d2">
+            Every project starts with listening. We offer end-to-end
+            solutions from initial design to final packaging.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card reveal">
+            <span class="service-card-number">01</span>
+            <h3>Custom Design &amp; Manufacturing</h3>
+            <p>
+              We design and manufacture textile sample books to your exact
+              specifications — from material and color selection to the final
+              format and presentation structure.
+            </p>
+          </article>
+
+          <article class="service-card reveal reveal-d1">
+            <span class="service-card-number">02</span>
+            <h3>Color Collections &amp; Palettes</h3>
+            <p>
+              We create exclusive color collections and palettes that precisely
+              reflect your brand identity and seasonal requirements.
+            </p>
+          </article>
+
+          <article class="service-card reveal reveal-d2">
+            <span class="service-card-number">03</span>
+            <h3>Complete Processing &amp; Packaging</h3>
+            <p>
+              We handle everything from sampling to final packaging — elegant
+              covers, practical presentation formats, and professional finishing
+              of every detail.
+            </p>
+          </article>
+
+          <article class="service-card reveal reveal-d3">
+            <span class="service-card-number">04</span>
+            <h3>Consulting &amp; Advisory</h3>
+            <p>
+              Have a vision but unsure how to execute it? We advise on
+              material selection, production technology, and design — from
+              concept to finished sample book.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WHY STOFFA
+         ============================================================ -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="why-inner">
+
+          <div class="why-logo-box">
+            <img src="assets/logo-white.png" alt="Stoffa logo" />
+            <div class="why-logo-accent"></div>
+            <p class="why-logo-tagline">Sample book manufacturing<br>at world-class level</p>
+          </div>
+
+          <div class="why-content-col">
+            <span class="section-label reveal">Our values</span>
+            <h2 id="why-heading" class="reveal reveal-d1">Why Stoffa</h2>
+
+            <div class="why-list">
+
+              <div class="why-item reveal reveal-d2">
+                <h3>Precision</h3>
+                <p>Every sample book leaves our facility after thorough quality control. No compromises.</p>
+              </div>
+
+              <div class="why-item reveal reveal-d3">
+                <h3>Tailored</h3>
+                <p>We don't work with templates. Every project is an original, designed precisely for your brand.</p>
+              </div>
+
+              <div class="why-item reveal reveal-d4">
+                <h3>Reliability</h3>
+                <p>We meet deadlines and keep our word. A dependable partner for your business.</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         REFERENCES
+         ============================================================ -->
+    <section id="references" aria-labelledby="references-heading">
+      <div class="container">
+
+        <div class="references-header">
+          <span class="section-label reveal">What clients say</span>
+          <h2 id="references-heading" class="reveal reveal-d1">References</h2>
+        </div>
+
+        <div class="references-grid">
+
+          <article class="testimonial-card">
+            <p class="testimonial-text">
+              Working with Stoffa exceeded my expectations. The sample books are not only
+              beautiful but perfectly functional. Luxury in every detail.
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-author-avatar"><i class="fa-solid fa-user"></i></div>
+              <div>
+                <div class="testimonial-author-name">Petra K.</div>
+                <div class="testimonial-author-role">Fashion Designer</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-text">
+              Finally someone who understands how important presentation is. Your sample books
+              are exactly what we needed — precise, elegant, and tailored to us.
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-author-avatar"><i class="fa-solid fa-user"></i></div>
+              <div>
+                <div class="testimonial-author-name">Martin D.</div>
+                <div class="testimonial-author-role">Interior Designer</div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT
+         ============================================================ -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-grid">
+
+          <div class="contact-form-col">
+            <span class="section-label reveal">Reach out</span>
+            <h2 id="contact-heading" class="reveal reveal-d1">Get in Touch</h2>
+
+            <form id="contact-form" action="" method="post" novalidate class="reveal reveal-d2">
+
+              <div class="form-group" data-field="name">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" autocomplete="name" placeholder="John Smith" />
+                <span class="form-error-msg" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group" data-field="company">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" autocomplete="organization" placeholder="Your Company Ltd." />
+                <span class="form-error-msg" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group" data-field="email">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="john@company.com" />
+                <span class="form-error-msg" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group" data-field="message">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell us about your project or enquiry…"></textarea>
+                <span class="form-error-msg" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="form-submit">Send Message</button>
+
+            </form>
+
+            <div id="form-success" class="form-success" role="alert">
+              <svg class="success-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="32" cy="32" r="31" stroke="#E8631A" stroke-width="2"/>
+                <path d="M18 32l10 10 18-20" stroke="#E8631A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <h3>Message Sent</h3>
+              <p>We'll get back to you within 24 hours.</p>
+              <button id="form-reset" class="form-reset">Send another message</button>
+            </div>
+          </div>
+
+          <div class="contact-info-col reveal reveal-d2">
+            <h3>Contact Details</h3>
+
+            <div class="contact-detail">
+              <strong>Company</strong>
+              <span>Stoffa s.r.o.</span>
+            </div>
+
+            <div class="contact-detail">
+              <strong>Address</strong>
+              <span>Slovákova 279/11<br />602 00 Brno, Czech Republic</span>
+            </div>
+
+            <div class="contact-detail">
+              <strong>Email</strong>
+              <a href="mailto:info@stoffa.cz">info@stoffa.cz</a>
+            </div>
+
+            <div class="contact-detail" style="margin-top:48px;padding-top:32px;border-top:1px solid var(--border);">
+              <strong>Office Hours</strong>
+              <span>Mon – Fri: 8:00 – 17:00</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-top-inner">
+
+          <div class="footer-brand">
+            <img src="assets/logo-white.png" alt="Stoffa" class="footer-logo-img" />
+            <p class="footer-tagline">Sample book manufacturing at world-class level.<br>Precision in every detail.</p>
+          </div>
+
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <span class="footer-nav-label">Navigation</span>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#why">Why Stoffa</a>
+            <a href="#references">References</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <div class="footer-contact-col">
+            <span class="footer-nav-label">Contact</span>
+            <a href="mailto:info@stoffa.cz" class="footer-contact-link"><i class="fa-solid fa-envelope"></i> info@stoffa.cz</a>
+            <span class="footer-contact-link"><i class="fa-solid fa-location-dot"></i> Slovákova 279/11, Brno</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <span class="footer-copy">© 2025 STOFFA s.r.o. — All rights reserved</span>
+          <div class="footer-lang">
+            <a href="index.html">CZ</a>
+            <span>|</span>
+            <a href="index-en.html" class="active">EN</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Bottom CTA -->
+  <button id="mobile-cta" aria-label="Request a quote — scroll to contact">
+    Request a Quote &rarr;
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
