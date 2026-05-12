@@ -1,489 +1,100 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>STOFFA s.r.o. — Výroba vzorníků na světové úrovni</title>
-  <meta name="description" content="Stoffa s.r.o. navrhuje a vyrábí textilní vzorníky pro přední výrobce látek a módní značky. Preciznost, kvalita a dodržení termínů jsou naším standardem." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  <!-- FontAwesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/style.css?v=4" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Profesionální výroba textilních vzorníků — STOFFA s.r.o.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--o:#EB8860;--od:#D4702A;--ol:#F2A074;--dk:#1A1917;--tx:#4A4743;--txl:#706C67;--bg:#FAFAF8;--cr:#F5F3EF;--gy:#EDEAE5;--gy2:#D9D5CE;--hd:'Playfair Display',Georgia,serif;--bd:'Montserrat',Helvetica,sans-serif}
+html{scroll-behavior:smooth;overflow-x:hidden}body{font-family:var(--bd);color:var(--tx);background:var(--bg);cursor:none;overflow-x:hidden;font-weight:400}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+.cur{position:fixed;width:10px;height:10px;border-radius:50%;background:var(--o);pointer-events:none;z-index:10000;transition:transform .2s cubic-bezier(.16,1,.3,1),opacity .2s;mix-blend-mode:difference;transform:translate(-50%,-50%)}.cur-r{position:fixed;width:36px;height:36px;border-radius:50%;border:1.5px solid var(--o);pointer-events:none;z-index:9999;transition:transform .35s cubic-bezier(.16,1,.3,1),opacity .2s,width .3s,height .3s;mix-blend-mode:difference;transform:translate(-50%,-50%);opacity:.5}.cur.h{transform:translate(-50%,-50%) scale(0)}.cur-r.h{width:60px;height:60px;opacity:.3}@media(max-width:900px){.cur,.cur-r{display:none}body{cursor:auto}}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:22px 60px;display:flex;align-items:center;justify-content:space-between;transition:all .5s cubic-bezier(.16,1,.3,1)}nav.sc{background:rgba(250,250,248,.96);backdrop-filter:blur(16px);box-shadow:0 1px 30px rgba(0,0,0,.06);padding:14px 60px}.nl img{height:36px;transition:height .3s}nav.sc .nl img{height:30px}.nk{display:flex;gap:36px;align-items:center}.nk a{font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;position:relative;padding:4px 0;color:var(--tx)}.nk a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:1.5px;background:var(--o);transition:width .4s cubic-bezier(.16,1,.3,1)}.nk a:hover::after{width:100%}.nk a:hover{color:var(--dk)}.ls{display:flex;gap:4px;margin-left:24px;border-left:1px solid var(--gy2);padding-left:24px}.lb{font-size:11px;font-weight:700;letter-spacing:1px;padding:5px 12px;border:1.5px solid var(--gy2);border-radius:24px;cursor:pointer;transition:all .3s;background:transparent;font-family:var(--bd);color:var(--tx)}.lb.act{background:var(--o);color:#fff;border-color:var(--o)}.hb{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:101}.hb span{width:26px;height:2px;background:var(--dk);transition:all .3s}.mm{display:none;position:fixed;inset:0;background:var(--bg);z-index:99;flex-direction:column;align-items:center;justify-content:center;gap:28px}.mm.op{display:flex}.mm a{font-size:20px;font-family:var(--hd);font-weight:600}@media(max-width:900px){nav{padding:16px 20px}nav.sc{padding:12px 20px}.nk{display:none}.hb{display:flex}}
+.rv{opacity:0;transform:translateY(36px);transition:all .9s cubic-bezier(.16,1,.3,1)}.rv.vis{opacity:1;transform:translateY(0)}.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}.d5{transition-delay:.5s}
+section{padding:120px 60px}@media(max-width:768px){section{padding:80px 20px}}.st{display:inline-flex;align-items:center;gap:10px;font-size:11px;letter-spacing:3.5px;text-transform:uppercase;font-weight:600;color:var(--o);margin-bottom:16px}.st::before{content:'';width:30px;height:1.5px;background:var(--o)}.sh{font-family:var(--hd);font-size:clamp(30px,3.8vw,52px);font-weight:700;color:var(--dk);margin-bottom:20px;line-height:1.15}.sd{font-size:15px;line-height:1.85;max-width:580px;margin-bottom:60px;color:var(--txl)}
+.bp{display:inline-flex;align-items:center;gap:10px;background:var(--o);color:#fff;padding:15px 32px;font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;transition:all .4s cubic-bezier(.16,1,.3,1);border:2px solid var(--o);font-family:var(--bd);cursor:pointer}.bp:hover{background:var(--dk);border-color:var(--dk);transform:translateY(-2px)}.bp svg{transition:transform .3s}.bp:hover svg{transform:translateX(4px)}.bo{display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--dk);padding:15px 32px;font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;transition:all .4s;border:2px solid var(--gy2);font-family:var(--bd);cursor:pointer}.bo:hover{border-color:var(--o);color:var(--o)}
+footer{background:#111;padding:0}.ft-main{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:50px;padding:60px;border-bottom:1px solid rgba(255,255,255,.06)}.ft-brand{display:flex;flex-direction:column;gap:20px;align-items:flex-start}.ft-brand img{height:32px;width:auto;object-fit:contain}.ft-brand p{font-size:13px;line-height:1.8;color:rgba(255,255,255,.35);max-width:300px}.ft-col h5{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:20px}.ft-col a,.ft-col p{display:block;font-size:13px;line-height:2.2;color:rgba(255,255,255,.3);transition:color .2s}.ft-col a:hover{color:var(--o)}.ft-bot{display:flex;justify-content:space-between;align-items:center;padding:24px 60px;font-size:11px;color:rgba(255,255,255,.2);letter-spacing:1px}@media(max-width:768px){.ft-main{grid-template-columns:1fr 1fr;gap:30px;padding:40px 24px}.ft-bot{flex-direction:column;gap:12px;text-align:center;padding:20px 24px}}
+.stt{position:fixed;bottom:32px;right:32px;width:44px;height:44px;background:var(--o);color:#fff;border:none;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:90;opacity:0;transform:translateY(20px);transition:all .3s;font-size:18px}.stt.sh{opacity:1;transform:translateY(0)}.stt:hover{background:var(--dk)}
+.hero{display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}.hl{display:flex;flex-direction:column;justify-content:center;padding:100px 60px 40px}.htag{display:inline-flex;align-items:center;gap:10px;font-size:11px;letter-spacing:3.5px;text-transform:uppercase;font-weight:600;color:var(--o);margin-bottom:24px}.htag::before{content:'';width:40px;height:1.5px;background:var(--o)}.hero h1{font-family:var(--hd);font-size:clamp(36px,4.2vw,60px);font-weight:700;line-height:1.12;color:var(--dk);margin-bottom:20px}.hero h1 em{font-style:italic;color:var(--o)}.hdesc{font-size:15px;line-height:1.8;color:var(--txl);max-width:480px;margin-bottom:28px}.hcta{display:flex;gap:14px;flex-wrap:wrap}.hr{position:relative;overflow:hidden}.hr img{width:100%;height:100%;object-fit:cover;animation:hz 25s ease-in-out infinite alternate}.hr::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--bg) 0%,transparent 12%)}@keyframes hz{0%{transform:scale(1.04)}100%{transform:scale(1)}}
+.hcar{width:100%;height:320px;margin-top:40px;position:relative;overflow:hidden;border:1px solid var(--gy);background:#fff;box-shadow:0 8px 36px rgba(0,0,0,.08)}.hcar-track{display:flex;flex-direction:column;animation:hslide 15s ease-in-out infinite}.hcar-item{min-height:320px;display:flex;align-items:center;gap:28px;padding:24px}.hcar-item img{width:180px;height:272px;object-fit:cover;border-radius:6px;flex-shrink:0}.hcar-info{display:flex;flex-direction:column;gap:10px;flex:1}.hcar-info span{font-size:20px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dk)}.hcar-info small{font-size:14px;color:var(--txl);line-height:1.7}.hcar-dots{position:absolute;bottom:10px;right:14px;display:flex;gap:5px}.hcar-dots i{width:8px;height:8px;border-radius:50%;background:var(--gy2);transition:all .3s}.hcar-dots i.ac{background:var(--o);width:24px;border-radius:4px}@keyframes hslide{0%,16%{transform:translateY(0)}20%,36%{transform:translateY(-320px)}40%,56%{transform:translateY(-640px)}60%,76%{transform:translateY(-960px)}80%,96%{transform:translateY(-1280px)}100%{transform:translateY(0)}}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hl{padding:90px 24px 30px}.hr{height:300px}.hr::after{background:linear-gradient(to top,var(--bg) 0%,transparent 20%)}.hcar{height:260px}.hcar-item{min-height:260px;padding:16px}.hcar-item img{width:120px;height:220px}}
+.mq{overflow:hidden;background:var(--o);padding:14px 0;white-space:nowrap}.mqt{display:flex;animation:m 35s linear infinite}.mqt span{font-family:var(--hd);font-size:16px;font-weight:500;color:#fff;padding:0 32px;flex-shrink:0}.mqt .dt{font-size:8px;opacity:.5}@keyframes m{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.products{background:var(--cr)}.pg{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:28px}.pc{background:#fff;overflow:hidden;position:relative;transition:transform .5s cubic-bezier(.16,1,.3,1),box-shadow .5s;cursor:pointer}.pc:hover{transform:translateY(-6px);box-shadow:0 24px 60px rgba(0,0,0,.08)}.pci{height:340px;overflow:hidden;position:relative}.pci img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.16,1,.3,1)}.pc:hover .pci img{transform:scale(1.06)}.pci .pcb{position:absolute;top:20px;left:20px;background:var(--o);color:#fff;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:8px 16px;z-index:2}.pci::before{content:"Zobrazit detail →";position:absolute;bottom:20px;left:20px;z-index:3;color:#fff;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;opacity:0;transition:opacity .3s}.pc:hover .pci::before{opacity:1}.pcbd{padding:32px 28px}.pcbd h3{font-family:var(--hd);font-size:24px;font-weight:700;color:var(--dk);margin-bottom:14px}.pcbd p{font-size:14px;line-height:1.75;color:var(--txl)}.pctg{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}.pctg span{font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;padding:5px 12px;border:1px solid var(--gy);color:var(--txl);border-radius:20px}
+.fg2{display:grid;grid-template-columns:repeat(3,1fr);gap:40px 50px}@media(max-width:900px){.fg2{grid-template-columns:1fr 1fr}}@media(max-width:560px){.fg2{grid-template-columns:1fr}}.ft2{position:relative;padding-left:48px}.ft2::before{content:'';position:absolute;left:0;top:6px;width:24px;height:2px;background:var(--o)}.ft2::after{content:'';position:absolute;left:0;top:16px;width:14px;height:2px;background:var(--o);opacity:.4}.ft2 h4{font-family:var(--hd);font-size:20px;font-weight:600;color:var(--dk);margin-bottom:10px}.ft2 p{font-size:13px;line-height:1.75;color:var(--txl)}
+.process{background:var(--cr)}.prg{display:grid;grid-template-columns:repeat(4,1fr);gap:40px}@media(max-width:900px){.prg{grid-template-columns:1fr 1fr}}@media(max-width:560px){.prg{grid-template-columns:1fr}}.ps{padding:36px 28px;background:#fff;border-top:3px solid var(--o);transition:transform .3s,box-shadow .3s}.ps:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.06)}.psn{font-family:var(--hd);font-size:48px;font-weight:700;color:var(--o);opacity:.2;margin-bottom:16px}.ps h3{font-family:var(--hd);font-size:20px;font-weight:600;color:var(--dk);margin-bottom:12px}.ps p{font-size:13px;line-height:1.75;color:var(--txl)}
+.gallery{background:var(--dk);color:#fff}.gallery .st{color:var(--ol)}.gallery .sh{color:#fff}.gallery .sd{color:rgba(255,255,255,.5)}.gg{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:200px;gap:12px}.gi{overflow:hidden;position:relative}.gi img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.16,1,.3,1)}.gi:hover img{transform:scale(1.05)}.g1{grid-column:span 5;grid-row:span 2}.g2{grid-column:span 4}.g3{grid-column:span 3}.g4{grid-column:span 3}.g5{grid-column:span 4}@media(max-width:768px){.gg{grid-template-columns:1fr 1fr;grid-auto-rows:180px}.g1,.g2,.g3,.g4,.g5{grid-column:span 1;grid-row:span 1}.g1{grid-column:span 2}}
+.contact{background:var(--dk);color:#fff;position:relative;overflow:hidden}.contact .st{color:var(--ol)}.contact .sh{color:#fff}.contact .sd{color:rgba(255,255,255,.5)}.cg{display:grid;grid-template-columns:1fr 1.2fr;gap:80px;position:relative;z-index:2}.ci h3{font-family:var(--hd);font-size:28px;font-weight:600;color:#fff;margin-bottom:24px}.ci p{margin-bottom:14px;line-height:1.75;font-size:14px;color:rgba(255,255,255,.5)}.ci a{color:var(--o);font-weight:600;border-bottom:1px solid var(--o)}.cd{margin-top:36px;padding-top:36px;border-top:1px solid rgba(255,255,255,.08)}.cd h4{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.7);margin-bottom:16px}.cf{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:40px}.cf .fg{margin-bottom:20px}.cf .fg label{display:block;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:8px;color:rgba(255,255,255,.6)}.cf .fg input,.cf .fg textarea,.cf .fg select{width:100%;padding:14px 18px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);font-size:14px;font-family:var(--bd);transition:border .3s;outline:none;color:#fff}.cf .fg input:focus,.cf .fg textarea:focus,.cf .fg select:focus{border-color:var(--o)}.cf .fg textarea{height:120px;resize:vertical}.cf .fg select{appearance:none}.cf .fg select option{background:var(--dk)}.cf .fr{display:grid;grid-template-columns:1fr 1fr;gap:20px}.cf .sub{width:100%;background:var(--o);color:#fff;border:none;padding:18px;font-size:13px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;cursor:pointer;font-family:var(--bd);transition:all .3s;display:flex;align-items:center;justify-content:center;gap:10px;margin-top:8px}.cf .sub:hover{background:#fff;color:var(--dk)}@media(max-width:768px){.cg{grid-template-columns:1fr}.cf .fr{grid-template-columns:1fr}.cf{padding:28px}}
+@media(max-width:900px){#about>div{grid-template-columns:1fr !important}#about>div>div:first-child{min-height:350px !important}}
+</style>
 </head>
 <body>
-
-  <!-- Scroll Progress Bar -->
-  <div id="progress-bar" aria-hidden="true"></div>
-
-  <!-- ============================================================
-       HEADER
-       ============================================================ -->
-  <header id="header">
-    <div class="container">
-      <div class="header-inner">
-
-        <!-- Logo -->
-        <a href="index.html" class="logo" aria-label="STOFFA — domovská stránka">
-          <img src="assets/logo-white.png" alt="Stoffa" class="logo-white" />
-          <img src="assets/logo-color.png" alt="Stoffa" class="logo-color" />
-        </a>
-
-        <!-- Nav -->
-        <nav aria-label="Hlavní navigace">
-          <ul class="nav-links">
-            <li><a href="#about">O nás</a></li>
-            <li><a href="#services">Služby</a></li>
-            <li><a href="#why">Proč Stoffa</a></li>
-            <li><a href="#references">Reference</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-          </ul>
-        </nav>
-
-        <!-- Language + Hamburger -->
-        <div style="display:flex;align-items:center;gap:20px;">
-          <div class="lang-switcher" aria-label="Přepnutí jazyka">
-            <a href="index.html" class="active" aria-current="page">CZ</a>
-            <span aria-hidden="true">|</span>
-            <a href="index-en.html">EN</a>
-          </div>
-          <button class="hamburger" aria-label="Otevřít menu" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-
-      </div>
-    </div>
-  </header>
-
-  <!-- Mobile Menu Overlay -->
-  <div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigace">
-    <button class="mobile-menu-close" aria-label="Zavřít menu">&times;</button>
-    <nav>
-      <ul class="mobile-menu-links">
-        <li><a href="#about">O nás</a></li>
-        <li><a href="#services">Služby</a></li>
-        <li><a href="#why">Proč Stoffa</a></li>
-        <li><a href="#references">Reference</a></li>
-        <li><a href="#contact">Kontakt</a></li>
-      </ul>
-    </nav>
-    <div class="mobile-menu-lang">
-      <a href="index.html" class="active">CZ</a>
-      <a href="index-en.html">EN</a>
-    </div>
-  </div>
-
-  <main>
-
-    <!-- ============================================================
-         HERO
-         ============================================================ -->
-    <section id="hero" aria-label="Úvodní sekce">
-
-      <!-- Video background -->
-      <video autoplay muted loop playsinline aria-hidden="true">
-        <source src="assets/hero.mp4" type="video/mp4" />
-      </video>
-
-      <!-- Dark overlay -->
-      <div class="hero-overlay" aria-hidden="true"></div>
-
-      <!-- Content -->
-      <div class="hero-content">
-        <h1>Výroba vzorníků<br>na světové úrovni</h1>
-
-        <!-- Cycling subtext -->
-        <div class="hero-subtext-wrap" aria-live="polite">
-          <p class="hero-subtext active">Preciznost v každém detailu.</p>
-          <p class="hero-subtext">Moderní technologie. Dodržené termíny.</p>
-          <p class="hero-subtext">Spolehlivý partner pro textilní průmysl.</p>
-        </div>
-
-        <a href="#services" class="btn btn-ghost">Naše služby</a>
-      </div>
-
-      <!-- Scroll indicator -->
-      <div class="hero-scroll" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M12 5v14M5 12l7 7 7-7"/>
-        </svg>
-      </div>
-
-    </section>
-
-    <!-- ============================================================
-         ABOUT
-         ============================================================ -->
-    <section id="about" aria-labelledby="about-heading">
-      <div class="container">
-        <div class="about-grid">
-
-          <!-- Text column -->
-          <div class="about-text">
-            <span class="section-label reveal">O společnosti</span>
-            <h2 id="about-heading" class="reveal reveal-d1">O nás</h2>
-
-            <p class="reveal reveal-d2">
-              Stoffa s.r.o. vznikla s jedinou vizí: vyrábět vzorníky, které nejsou
-              jen praktickým nástrojem, ale skutečnou vizitkou kvality. V době, kdy
-              se trh zrychluje, jdeme cestou preciznosti a poctivého zpracování.
-            </p>
-            <p class="reveal reveal-d3">
-              Naše vzorníky vznikají v srdci České republiky, kde spojujeme moderní
-              technologie s důrazem na detail. Každý kus, který opustí naši výrobu,
-              je výsledkem odbornosti a hlubokého respektu k materiálu.
-            </p>
-            <p class="reveal reveal-d3">
-              Spolupracujeme s designéry, výrobci látek, módními značkami a
-              obchodníky — s každým, kdo ví, že prezentace je stejně důležitá jako
-              samotný produkt.
-            </p>
-
-            <!-- Stats row -->
-            <div class="stats-row">
-              <div class="stat-block reveal">
-                <div class="stat-number">B2B</div>
-                <div class="stat-label">Výhradní zaměření</div>
-              </div>
-              <div class="stat-block reveal reveal-d1">
-                <div class="stat-number">100%</div>
-                <div class="stat-label">Výroba na míru</div>
-              </div>
-              <div class="stat-block reveal reveal-d2">
-                <div class="stat-number">CZ</div>
-                <div class="stat-label">Výroba v ČR</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Image column -->
-          <div class="about-image-wrap reveal reveal-d2">
-            <img
-              src="assets/photo-01.avif"
-              alt="Stohy textilních vzorníků v různých barvách — detail výroby Stoffa"
-              class="section-img"
-              loading="lazy"
-            />
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery carousel (auto-scroll) -->
-    <div class="gallery-carousel" aria-hidden="true">
-      <div class="gallery-track">
-        <div class="gallery-slide"><img src="assets/photo-04.jpg" alt="Barevná škála nití ve vzorníku" /></div>
-        <div class="gallery-slide"><img src="assets/photo-07.avif" alt="Detail barevných textilních vzorků" /></div>
-        <div class="gallery-slide"><img src="assets/photo-08.jpg" alt="Složené textilní vzorky v různých odstínech" /></div>
-        <div class="gallery-slide"><img src="assets/photo-05.jpg" alt="Textilní vzorky" /></div>
-        <div class="gallery-slide"><img src="assets/photo-06.jpg" alt="Textilní detaily" /></div>
-        <!-- Duplicate for seamless loop -->
-        <div class="gallery-slide"><img src="assets/photo-04.jpg" alt="" /></div>
-        <div class="gallery-slide"><img src="assets/photo-07.avif" alt="" /></div>
-        <div class="gallery-slide"><img src="assets/photo-08.jpg" alt="" /></div>
-        <div class="gallery-slide"><img src="assets/photo-05.jpg" alt="" /></div>
-        <div class="gallery-slide"><img src="assets/photo-06.jpg" alt="" /></div>
-      </div>
-    </div>
-
-    <!-- ============================================================
-         SERVICES
-         ============================================================ -->
-    <section id="services" aria-labelledby="services-heading">
-      <div class="container">
-
-        <div class="services-header">
-          <span class="section-label reveal">Co nabízíme</span>
-          <h2 id="services-heading" class="reveal reveal-d1">Naše služby</h2>
-          <p class="reveal reveal-d2">
-            Každý projekt začíná nasloucháním. Nabízíme komplexní řešení
-            od prvního návrhu až po finální balení.
-          </p>
-        </div>
-
-        <div class="services-grid">
-
-          <!-- Card 1 -->
-          <article class="service-card reveal">
-            <span class="service-card-number">01</span>
-            <h3>Návrh a výroba na míru</h3>
-            <p>
-              Navrhujeme a vyrábíme textilní vzorníky přesně podle vašich
-              specifikací — od výběru materiálů a barev až po finální formát
-              a strukturu prezentace.
-            </p>
-          </article>
-
-          <!-- Card 2 -->
-          <article class="service-card reveal reveal-d1">
-            <span class="service-card-number">02</span>
-            <h3>Barevné kolekce a palety</h3>
-            <p>
-              Tvoříme exkluzivní barevné kolekce a palety, které přesně
-              odrážejí identitu vaší značky a požadavky sezóny.
-            </p>
-          </article>
-
-          <!-- Card 3 -->
-          <article class="service-card reveal reveal-d2">
-            <span class="service-card-number">03</span>
-            <h3>Kompletní zpracování a balení</h3>
-            <p>
-              Zajistíme vše od vzorkování po finální balení — elegantní obaly,
-              praktické prezentační formáty a profesionální dokončení každého
-              detailu.
-            </p>
-          </article>
-
-          <!-- Card 4 -->
-          <article class="service-card reveal reveal-d3">
-            <span class="service-card-number">04</span>
-            <h3>Poradenství a konzultace</h3>
-            <p>
-              Máte vizi, ale nevíte, jak ji uchopit? Poradíme s výběrem
-              materiálů, technologií i designu. Od nápadu k hotovému vzorníku.
-            </p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         WHY STOFFA
-         ============================================================ -->
-    <section id="why" aria-labelledby="why-heading">
-      <div class="container">
-        <div class="why-inner">
-
-          <!-- Left: logo box -->
-          <div class="why-logo-box">
-            <img src="assets/logo-white.png" alt="Stoffa logo" />
-            <div class="why-logo-accent"></div>
-            <p class="why-logo-tagline">Výroba vzorníků<br>na světové úrovni</p>
-          </div>
-
-          <!-- Right: content -->
-          <div class="why-content-col">
-            <span class="section-label reveal">Naše hodnoty</span>
-            <h2 id="why-heading" class="reveal reveal-d1">Proč Stoffa</h2>
-
-            <div class="why-list">
-
-              <div class="why-item reveal reveal-d2">
-                <h3>Preciznost</h3>
-                <p>Každý vzorník opouští naši výrobu po důkladné kontrole kvality. Žádné kompromisy.</p>
-              </div>
-
-              <div class="why-item reveal reveal-d3">
-                <h3>Na míru</h3>
-                <p>Nepracujeme se šablonami. Každý projekt je originál, navržený přesně pro vaši značku.</p>
-              </div>
-
-              <div class="why-item reveal reveal-d4">
-                <h3>Spolehlivost</h3>
-                <p>Dodržujeme termíny a držíme slovo. Spolehlivý partner pro váš byznys.</p>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         REFERENCES / TESTIMONIALS
-         ============================================================ -->
-    <section id="references" aria-labelledby="references-heading">
-      <div class="container">
-
-        <div class="references-header">
-          <span class="section-label reveal">Co říkají klienti</span>
-          <h2 id="references-heading" class="reveal reveal-d1">Reference</h2>
-        </div>
-
-        <div class="references-grid">
-
-          <article class="testimonial-card">
-            <p class="testimonial-text">
-              Spolupráce s firmou Stoffa předčila má očekávání. Vzorníky jsou nejen krásné,
-              ale i dokonale funkční. Luxus v každém detailu.
-            </p>
-            <div class="testimonial-author">
-              <div class="testimonial-author-avatar"><i class="fa-solid fa-user"></i></div>
-              <div>
-                <div class="testimonial-author-name">Petra K.</div>
-                <div class="testimonial-author-role">Módní návrhářka</div>
-              </div>
-            </div>
-          </article>
-
-          <article class="testimonial-card">
-            <p class="testimonial-text">
-              Konečně někdo, kdo chápe, jak důležitá je prezentace. Vzorníky od vás jsou přesně
-              to, co jsme potřebovali — precizní, elegantní a na míru.
-            </p>
-            <div class="testimonial-author">
-              <div class="testimonial-author-avatar"><i class="fa-solid fa-user"></i></div>
-              <div>
-                <div class="testimonial-author-name">Martin D.</div>
-                <div class="testimonial-author-role">Interiérový designer</div>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         CONTACT
-         ============================================================ -->
-    <section id="contact" aria-labelledby="contact-heading">
-      <div class="container">
-        <div class="contact-grid">
-
-          <!-- Form column -->
-          <div class="contact-form-col">
-            <span class="section-label reveal">Spojte se s námi</span>
-            <h2 id="contact-heading" class="reveal reveal-d1">Kontaktujte nás</h2>
-
-            <!-- Form -->
-            <form id="contact-form" action="" method="post" novalidate class="reveal reveal-d2">
-
-              <div class="form-group" data-field="name">
-                <label for="name">Jméno a příjmení</label>
-                <input type="text" id="name" name="name" autocomplete="name" placeholder="Jan Novák" />
-                <span class="form-error-msg" aria-live="polite"></span>
-              </div>
-
-              <div class="form-group" data-field="company">
-                <label for="company">Firma</label>
-                <input type="text" id="company" name="company" autocomplete="organization" placeholder="Vaše společnost s.r.o." />
-                <span class="form-error-msg" aria-live="polite"></span>
-              </div>
-
-              <div class="form-group" data-field="email">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" autocomplete="email" placeholder="jan@firma.cz" />
-                <span class="form-error-msg" aria-live="polite"></span>
-              </div>
-
-              <div class="form-group" data-field="message">
-                <label for="message">Zpráva</label>
-                <textarea id="message" name="message" placeholder="Popište váš projekt nebo poptávku…"></textarea>
-                <span class="form-error-msg" aria-live="polite"></span>
-              </div>
-
-              <button type="submit" class="form-submit">Odeslat</button>
-
-            </form>
-
-            <!-- Success state -->
-            <div id="form-success" class="form-success" role="alert">
-              <svg class="success-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <circle cx="32" cy="32" r="31" stroke="#E8631A" stroke-width="2"/>
-                <path d="M18 32l10 10 18-20" stroke="#E8631A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <h3>Zpráva odeslána</h3>
-              <p>Ozveme se vám do 24 hodin.</p>
-              <button id="form-reset" class="form-reset">Odeslat další zprávu</button>
-            </div>
-          </div>
-
-          <!-- Info column -->
-          <div class="contact-info-col reveal reveal-d2">
-            <h3>Kontaktní údaje</h3>
-
-            <div class="contact-detail">
-              <strong>Společnost</strong>
-              <span>Stoffa s.r.o.</span>
-            </div>
-
-            <div class="contact-detail">
-              <strong>Adresa</strong>
-              <span>Slovákova 279/11<br>602 00 Brno</span>
-            </div>
-
-            <div class="contact-detail">
-              <strong>E-mail</strong>
-              <a href="mailto:info@stoffa.cz">info@stoffa.cz</a>
-            </div>
-
-            <!-- CLIENT: add phone number here -->
-            <!-- <div class="contact-detail">
-              <strong>Telefon</strong>
-              <a href="tel:+420XXXXXXXXX">+420 XXX XXX XXX</a>
-            </div> -->
-
-            <div class="contact-detail" style="margin-top:48px;padding-top:32px;border-top:1px solid var(--border);">
-              <strong>Provozní doba</strong>
-              <span>Po – Pá: 8:00 – 17:00</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ============================================================
-       FOOTER
-       ============================================================ -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="footer-top-inner">
-
-          <div class="footer-brand">
-            <img src="assets/logo-white.png" alt="Stoffa" class="footer-logo-img" />
-            <p class="footer-tagline">Výroba vzorníků na světové úrovni.<br>Preciznost v každém detailu.</p>
-          </div>
-
-          <nav class="footer-nav" aria-label="Patička navigace">
-            <span class="footer-nav-label">Navigace</span>
-            <a href="#about">O nás</a>
-            <a href="#services">Služby</a>
-            <a href="#why">Proč Stoffa</a>
-            <a href="#references">Reference</a>
-            <a href="#contact">Kontakt</a>
-          </nav>
-
-          <div class="footer-contact-col">
-            <span class="footer-nav-label">Kontakt</span>
-            <a href="mailto:info@stoffa.cz" class="footer-contact-link"><i class="fa-solid fa-envelope"></i> info@stoffa.cz</a>
-            <span class="footer-contact-link"><i class="fa-solid fa-location-dot"></i> Slovákova 279/11, Brno</span>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="footer-bottom-inner">
-          <span class="footer-copy">© 2025 STOFFA s.r.o. — Všechna práva vyhrazena</span>
-          <div class="footer-lang">
-            <a href="index.html" class="active">CZ</a>
-            <span>|</span>
-            <a href="index-en.html">EN</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Mobile Bottom CTA -->
-  <button id="mobile-cta" aria-label="Nezávazná poptávka — přejít na kontakt">
-    Nezávazná poptávka &rarr;
-  </button>
-
-  <script src="js/main.js"></script>
+<div class="cur" id="c"></div><div class="cur-r" id="cr"></div>
+<nav id="nav"><a href="index.html" class="nl"><img src="img/logo.png" alt="Stoffa"></a><div class="nk"><a href="index.html#products">Produkty</a><a href="index.html#process">Proces</a><a href="index.html#gallery">Galerie</a><a href="index.html#about">O nás</a><a href="index.html#contact">Kontakt</a><div class="ls"><button class="lb act" data-lang="cz">CZ</button><button class="lb" data-lang="en">EN</button><button class="lb" data-lang="pl">PL</button></div></div><div class="hb" onclick="toggleMenu()"><span></span><span></span><span></span></div></nav>
+<div class="mm" id="mm"><a href="index.html#products" onclick="toggleMenu()">Produkty</a><a href="index.html#process" onclick="toggleMenu()">Proces</a><a href="index.html#gallery" onclick="toggleMenu()">Galerie</a><a href="index.html#about" onclick="toggleMenu()">O nás</a><a href="index.html#contact" onclick="toggleMenu()">Kontakt</a></div>
+
+<section class="hero" id="hero"><div class="hl">
+<div class="htag">Stoffa s.r.o.</div>
+<h1>Vzorníky na úrovni <em>vaší značky</em></h1>
+<p class="hdesc">Vyrábíme textilní vzorníky pro značky, které nedělají kompromisy. Precizní zpracování, moderní technologie, dodání přesně podle vašeho harmonogramu.</p>
+<div class="hcta"><a href="#contact" class="bp">Nezávazná poptávka <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9h10M10 5l4 4-4 4"/></svg></a><a href="#products" class="bo">Naše produkty</a></div>
+<div class="hcar" id="hcar"><div class="hcar-track" id="hcarTrack">
+<div class="hcar-item"><img src="img/carousel-kniha.jpg" alt=""><div class="hcar-info"><span>Vzorník Kniha</span><small>Klasický knižní formát pro rozsáhlé kolekce textilií</small></div></div>
+<div class="hcar-item"><img src="img/carousel-vodopad.jpg" alt=""><div class="hcar-info"><span>Vzorník Vodopád</span><small>Kaskádový přehled celé kolekce na první pohled</small></div></div>
+<div class="hcar-item"><img src="img/carousel-karty.jpg" alt=""><div class="hcar-info"><span>Vzorník Karty</span><small>Jednotlivé karty s precizním značením kolekce</small></div></div>
+<div class="hcar-item"><img src="img/carousel-handmuster.jpg" alt=""><div class="hcar-info"><span>Handmuster</span><small>Ruční vzorky s důrazem na haptický zážitek</small></div></div>
+<div class="hcar-item"><img src="img/carousel-serie.jpg" alt=""><div class="hcar-info"><span>Série Vzorníků</span><small>Velkoobjemová výroba se zárukou jednotné kvality</small></div></div>
+</div><div class="hcar-dots"><i class="ac"></i><i></i><i></i><i></i><i></i></div></div>
+</div><div class="hr"><img src="img/hero.jpg" alt="Stoffa"></div></section>
+
+<div class="mq"><div class="mqt"><span>Precizní zpracování</span><span class="dt">✦</span><span>Moderní technologie</span><span class="dt">✦</span><span>Záruka kvality</span><span class="dt">✦</span><span>Rychlost dodání</span><span class="dt">✦</span><span>Prezentace vaší značky</span><span class="dt">✦</span><span>Schvalovací proces</span><span class="dt">✦</span><span>Od kusu po série</span><span class="dt">✦</span><span>Precizní zpracování</span><span class="dt">✦</span><span>Moderní technologie</span><span class="dt">✦</span><span>Záruka kvality</span><span class="dt">✦</span><span>Rychlost dodání</span><span class="dt">✦</span><span>Prezentace vaší značky</span><span class="dt">✦</span><span>Schvalovací proces</span><span class="dt">✦</span><span>Od kusu po série</span><span class="dt">✦</span></div></div>
+
+<section class="products" id="products"><div class="rv" style="max-width:700px"><div class="st">Naše produkty</div><h2 class="sh">Kompletní řešení pro prezentaci vaší kolekce</h2><p class="sd">Každý projekt je pro nás jedinečný. Nabízíme široké portfolio formátů vzorníků, které přesně odpovídají potřebám vaší značky.</p></div>
+<div class="pg">
+<a href="kniha.html" class="pc rv" style="color:inherit"><div class="pci"><div class="pcb">01</div><img src="img/product-kniha.jpg" alt="Vzorník Kniha"></div><div class="pcbd"><h3>Vzorník Kniha</h3><p>Klasický knižní formát — základní nástroj pro prezentaci rozsáhlých kolekcí textilií s elegantní vazbou a brandingem.</p><div class="pctg"><span>Kolekce látek</span><span>Vlastní potah</span><span>Ražba loga</span></div></div></a>
+<a href="vodopad.html" class="pc rv d1" style="color:inherit"><div class="pci"><div class="pcb">02</div><img src="img/product-vodopad.jpg" alt="Vzorník Vodopád"></div><div class="pcbd"><h3>Vzorník Vodopád</h3><p>Kaskádové uspořádání vzorků s okamžitým vizuálním přehledem celé kolekce — ideální pro showroomy.</p><div class="pctg"><span>Showroom</span><span>Rychlý přehled</span><span>Kompaktní</span></div></div></a>
+<a href="karty.html" class="pc rv d2" style="color:inherit"><div class="pci"><div class="pcb">03</div><img src="img/product-karty.jpg" alt="Vzorník Karty"></div><div class="pcbd"><h3>Vzorník Karty</h3><p>Jednotlivé vzorkové karty s precizním značením kolekce, dezénu a složení pro přenosné prezentace.</p><div class="pctg"><span>Přenosné</span><span>Značení</span><span>Zásilkový prodej</span></div></div></a>
+<a href="handmuster.html" class="pc rv d3" style="color:inherit"><div class="pci"><div class="pcb">04</div><img src="img/product-handmuster.jpg" alt="Handmuster"></div><div class="pcbd"><h3>Handmuster</h3><p>Individuální ruční vzorky s maximálním důrazem na haptický zážitek pro prémiové kolekce.</p><div class="pctg"><span>Premium</span><span>Haptický zážitek</span><span>Na míru</span></div></div></a>
+</div></section>
+
+<section id="features"><div class="rv" style="max-width:700px"><div class="st">Standardy</div><h2 class="sh">Měřítka, která definují naši práci</h2></div>
+<div class="fg2"><div class="ft2 rv"><h4>Technologie</h4><p>Investujeme do strojního vybavení, které garantuje opakovatelnou preciznost v každém výrobním cyklu.</p></div><div class="ft2 rv d1"><h4>Schvalovací proces</h4><p>Žádný vzorník neopustí výrobu bez vašeho podpisu. Prototyp — revize — schválení — produkce.</p></div><div class="ft2 rv d2"><h4>Identita značky</h4><p>Vzorník je prodloužením vaší značky. Potah, ražba, šití — každý element odpovídá vašemu brand manuálu.</p></div><div class="ft2 rv d3"><h4>Rychlost dodání</h4><p>Kolekce mají pevný harmonogram. Naše kapacity jsou dimenzovány tak, aby vzorníky byly připraveny přesně na čas.</p></div><div class="ft2 rv d4"><h4>Škálovatelnost</h4><p>Prototyp o jednom kusu i série v řádu tisíců procházejí identickým výrobním standardem.</p></div><div class="ft2 rv d5"><h4>Kontrola kvality</h4><p>Víceúrovňová kontrola v každé fázi výroby. Měříme, kontrolujeme, dokumentujeme.</p></div></div></section>
+
+<section class="process" id="process"><div class="rv" style="max-width:700px"><div class="st">Jak pracujeme</div><h2 class="sh">Od nápadu ke kompletnímu vzorníku</h2><p class="sd">Spolupracujeme s vámi v každé fázi — od prvního briefu až po finální expedici.</p></div>
+<div class="prg"><div class="ps rv"><div class="psn">01</div><h3>Konzultace & Briefing</h3><p>Společně definujeme požadavky na formát, design a specifikace vzorníku.</p></div><div class="ps rv d1"><div class="psn">02</div><h3>Návrh & Prototyp</h3><p>Vytvoříme prototyp ke schválení. Každý detail ladíme pro vaši značku.</p></div><div class="ps rv d2"><div class="psn">03</div><h3>Výroba & Kontrola</h3><p>Po schválení spouštíme výrobu s průběžnou kontrolou kvality.</p></div><div class="ps rv d3"><div class="psn">04</div><h3>Expedice & Distribuce</h3><p>Pečlivě zabalené vzorníky doručíme kamkoliv v Evropě.</p></div></div></section>
+
+<section class="gallery" id="gallery"><div class="rv"><div class="st">Galerie</div><h2 class="sh">Podívejte se na naši práci zblízka</h2><p class="sd">Více než slova řeknou naše realizace. Každý detail se počítá.</p></div>
+<div class="gg rv"><div class="gi g1"><img src="img/gallery-1.jpg" alt=""></div><div class="gi g2"><img src="img/gallery-2.jpg" alt=""></div><div class="gi g3"><img src="img/gallery-3.jpg" alt=""></div><div class="gi g4"><img src="img/gallery-4.jpg" alt=""></div><div class="gi g5"><img src="img/gallery-5.jpg" alt=""></div></div></section>
+
+<section id="about" style="padding:0;overflow:hidden"><div style="display:grid;grid-template-columns:1fr 1fr;min-height:560px">
+<div style="position:relative;overflow:hidden"><img src="img/about.jpg" alt="" style="width:100%;height:100%;object-fit:cover"><div style="position:absolute;inset:0;background:rgba(10,10,8,.75)"></div>
+<div style="position:absolute;bottom:50px;left:50px;right:50px;color:#fff"><div style="font-family:var(--hd);font-size:clamp(28px,3vw,40px);font-weight:700;line-height:1.2;margin-bottom:16px">Kde se precizní výroba<br>setkává s vizí<br>vaší značky.</div><div style="width:60px;height:3px;background:var(--o);margin-bottom:16px"></div><p style="font-size:14px;line-height:1.7;opacity:.55;max-width:400px">Tým s mezinárodními zkušenostmi ve výrobě vzorníků pro textilní, interiérový a automotive průmysl.</p></div></div>
+<div style="padding:80px 60px;display:flex;flex-direction:column;justify-content:center;background:var(--cr)"><div class="rv"><div class="st">O společnosti</div><h2 style="font-family:var(--hd);font-size:clamp(26px,2.8vw,38px);font-weight:700;color:var(--dk);margin-bottom:24px;line-height:1.2">Výrobní partner pro náročné projekty</h2>
+<p style="font-size:15px;line-height:1.85;color:var(--txl);margin-bottom:20px">Náš tým má <strong style="color:var(--dk)">více než 15 let zkušeností</strong> ve výrobě vzorníků pro mezinárodní klientelu. Strojní přesnost spojujeme s individuálním přístupem ke každé zakázce.</p>
+<p style="font-size:15px;line-height:1.85;color:var(--txl);margin-bottom:36px">Dodáváme pro klienty v textilním, interiérovém i technickém segmentu po celé Evropě.</p></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--gy2)" class="rv d1">
+<div style="padding:24px 24px 24px 0;border-right:1px solid var(--gy2)"><div style="font-family:var(--hd);font-size:36px;font-weight:700;color:var(--o)">15+</div><div style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--txl);margin-top:4px">Let zkušeností</div></div>
+<div style="padding:24px"><div style="font-family:var(--hd);font-size:36px;font-weight:700;color:var(--o)">EU</div><div style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--txl);margin-top:4px">Klienti po Evropě</div></div>
+<div style="padding:24px 24px 24px 0;border-right:1px solid var(--gy2);border-top:1px solid var(--gy2)"><div style="font-family:var(--hd);font-size:36px;font-weight:700;color:var(--o)">100%</div><div style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--txl);margin-top:4px">Kontrola kvality</div></div>
+<div style="padding:24px;border-top:1px solid var(--gy2)"><div style="font-family:var(--hd);font-size:36px;font-weight:700;color:var(--o)">500+</div><div style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--txl);margin-top:4px">Realizací ročně</div></div>
+</div></div></div></section>
+
+<section class="contact" id="contact"><div class="rv" style="max-width:700px"><div class="st">Kontakt</div><h2 class="sh">Připraveni na váš další projekt</h2><p class="sd">Specifikace, termín, objem — řekněte nám parametry a do 24 hodin obdržíte konkrétní nabídku.</p></div>
+<div class="cg"><div class="ci rv"><h3>STOFFA s.r.o.</h3><p>Slovákova 279/11<br>602 00 Brno<br>Česká republika</p><p><a href="mailto:info@stoffa.cz">info@stoffa.cz</a></p><div class="cd"><h4>Pracovní doba</h4><p>Po — Pá: 8:00 — 16:30</p></div></div>
+<div class="cf rv d1"><div class="fr"><div class="fg"><label>Jméno</label><input type="text"></div><div class="fg"><label>Firma</label><input type="text"></div></div><div class="fr"><div class="fg"><label>Email</label><input type="email"></div><div class="fg"><label>Telefon</label><input type="tel"></div></div><div class="fg"><label>Typ vzorníku</label><select><option>Vyberte...</option><option>Vzorník Kniha</option><option>Vzorník Vodopád</option><option>Vzorník Karty</option><option>Handmuster</option><option>Jiný</option></select></div><div class="fg"><label>Zpráva</label><textarea></textarea></div><button class="sub">Odeslat poptávku <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9h10M10 5l4 4-4 4"/></svg></button></div></div></section>
+<button class="stt" id="stt" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+<footer><div class="ft-main"><div class="ft-brand"><img src="img/logo-light.png" alt="Stoffa"><p>Výroba textilních vzorníků pro mezinárodní klientelu. Knihy, vodopády, karty, handmuster — od prototypu po sérii.</p></div><div class="ft-col"><h5>Produkty</h5><a href="kniha.html">Vzorník Kniha</a><a href="vodopad.html">Vzorník Vodopád</a><a href="karty.html">Vzorník Karty</a><a href="handmuster.html">Handmuster</a></div><div class="ft-col"><h5>Firma</h5><a href="index.html#about">O nás</a><a href="index.html#process">Jak pracujeme</a><a href="index.html#gallery">Galerie</a><a href="index.html#contact">Kontakt</a></div><div class="ft-col"><h5>Kontakt</h5><p>Slovákova 279/11<br>602 00 Brno</p><a href="mailto:info@stoffa.cz" style="color:var(--o)">info@stoffa.cz</a></div></div><div class="ft-bot"><span>© 2025 STOFFA s.r.o.</span><span>Všechna práva vyhrazena</span></div></footer>
+<script>
+const c=document.getElementById('c'),cr=document.getElementById('cr');document.addEventListener('mousemove',e=>{c.style.left=cr.style.left=e.clientX+'px';c.style.top=cr.style.top=e.clientY+'px'});document.querySelectorAll('a,button,.pc,.gi,input,textarea,select').forEach(el=>{el.addEventListener('mouseenter',()=>{c.classList.add('h');cr.classList.add('h')});el.addEventListener('mouseleave',()=>{c.classList.remove('h');cr.classList.remove('h')})});
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('sc',scrollY>60);const s=document.getElementById('stt');if(s)s.classList.toggle('sh',scrollY>600)});
+function toggleMenu(){document.getElementById('mm').classList.toggle('op')}
+const obs=new IntersectionObserver(e=>{e.forEach(i=>{if(i.isIntersecting)i.target.classList.add('vis')})},{threshold:.12});document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+let lang='cz';document.querySelectorAll('.lb').forEach(b=>{b.addEventListener('click',()=>{lang=b.dataset.lang;document.querySelectorAll('.lb').forEach(x=>x.classList.remove('act'));document.querySelectorAll('[data-lang="'+lang+'"]').forEach(x=>x.classList.add('act'));document.querySelectorAll('[data-'+lang+']').forEach(el=>{const v=el.getAttribute('data-'+lang);if(v){if(el.tagName==='INPUT'||el.tagName==='TEXTAREA')el.placeholder=v;else el.innerHTML=v}});document.documentElement.lang=lang==='cz'?'cs':lang})});
+</script>
+<script>
+const track=document.getElementById('hcarTrack'),dots=document.querySelectorAll('.hcar-dots i');
+if(track&&dots.length){setInterval(()=>{const m=getComputedStyle(track).transform;if(m&&m!=='none'){const ty=parseFloat(m.split(',')[5])||0;const idx=Math.round(Math.abs(ty)/320)%5;dots.forEach((d,i)=>d.classList.toggle('ac',i===idx))}},200)}
+</script>
 </body>
 </html>
