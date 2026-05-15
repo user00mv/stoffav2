@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://user00mv.github.io/stoffav2/sitemap.xml
