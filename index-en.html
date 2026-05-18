@@ -1,464 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>STOFFA s.r.o. — Sample Book Manufacturing at World-Class Level</title>
-  <meta name="description" content="Stoffa s.r.o. designs and manufactures textile sample books for leading fabric producers and fashion brands. Precision, quality, and on-time delivery are our standard." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  <!-- FontAwesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/style.css?v=4" />
-</head>
-<body>
-
-  <!-- Scroll Progress Bar -->
-  <div id="progress-bar" aria-hidden="true"></div>
-
-  <!-- ============================================================
-       HEADER
-       ============================================================ -->
-  <header id="header">
-    <div class="container">
-      <div class="header-inner">
-
-        <!-- Logo -->
-        <a href="index-en.html" class="logo" aria-label="STOFFA — Homepage">
-          <img src="assets/logo-white.png" alt="Stoffa" class="logo-white" />
-          <img src="assets/logo-color.png" alt="Stoffa" class="logo-color" />
-        </a>
-
-        <!-- Nav -->
-        <nav aria-label="Main navigation">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#why">Why Stoffa</a></li>
-            <li><a href="#references">References</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-
-        <!-- Language + Hamburger -->
-        <div style="display:flex;align-items:center;gap:20px;">
-          <div class="lang-switcher" aria-label="Language switcher">
-            <a href="index.html">CZ</a>
-            <span aria-hidden="true">|</span>
-            <a href="index-en.html" class="active" aria-current="page">EN</a>
-          </div>
-          <button class="hamburger" aria-label="Open menu" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-
-      </div>
-    </div>
-  </header>
-
-  <!-- Mobile Menu Overlay -->
-  <div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation">
-    <button class="mobile-menu-close" aria-label="Close menu">&times;</button>
-    <nav>
-      <ul class="mobile-menu-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#why">Why Stoffa</a></li>
-        <li><a href="#references">References</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="mobile-menu-lang">
-      <a href="index.html">CZ</a>
-      <a href="index-en.html" class="active">EN</a>
-    </div>
-  </div>
-
-  <main>
-
-    <!-- ============================================================
-         HERO
-         ============================================================ -->
-    <section id="hero" aria-label="Hero section">
-
-      <video autoplay muted loop playsinline aria-hidden="true">
-        <source src="assets/hero.mp4" type="video/mp4" />
-      </video>
-      <div class="hero-overlay" aria-hidden="true"></div>
-
-      <div class="hero-content">
-        <h1>Sample Book Manufacturing<br>at World-Class Level</h1>
-        <div class="hero-subtext-wrap" aria-live="polite">
-          <p class="hero-subtext active">Precision in every detail.</p>
-          <p class="hero-subtext">Modern technology. On-time delivery.</p>
-          <p class="hero-subtext">The reliable partner for the textile industry.</p>
-        </div>
-        <a href="#services" class="btn btn-ghost">Our Services</a>
-      </div>
-
-      <div class="hero-scroll" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M12 5v14M5 12l7 7 7-7"/>
-        </svg>
-      </div>
-
-    </section>
-
-    <!-- ============================================================
-         ABOUT
-         ============================================================ -->
-    <section id="about" aria-labelledby="about-heading">
-      <div class="container">
-        <div class="about-grid">
-
-          <div class="about-text">
-            <span class="section-label reveal">About the company</span>
-            <h2 id="about-heading" class="reveal reveal-d1">About Us</h2>
-
-            <p class="reveal reveal-d2">
-              Stoffa s.r.o. was founded with a single vision: to manufacture sample
-              books that serve not just as practical tools, but as true statements of
-              quality. In a market that prioritizes speed, we choose precision.
-            </p>
-            <p class="reveal reveal-d3">
-              Our sample books are produced in the Czech Republic, combining modern
-              production technology with an uncompromising attention to detail. Every
-              piece that leaves our facility is the result of expertise and deep respect
-              for material and craft.
-            </p>
-            <p class="reveal reveal-d3">
-              We work with designers, fabric manufacturers, fashion brands, and
-              distributors — everyone who understands that presentation is as
-              important as the product itself.
-            </p>
-
-            <div class="stats-row">
-              <div class="stat-block reveal">
-                <div class="stat-number">B2B</div>
-                <div class="stat-label">Exclusive Focus</div>
-              </div>
-              <div class="stat-block reveal reveal-d1">
-                <div class="stat-number">100%</div>
-                <div class="stat-label">Custom Manufacturing</div>
-              </div>
-              <div class="stat-block reveal reveal-d2">
-                <div class="stat-number">CZ</div>
-                <div class="stat-label">Made in Czech Republic</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="about-image-wrap reveal reveal-d2">
-            <img
-              src="assets/photo-01.avif"
-              alt="Stacks of textile sample books in various colours — Stoffa production detail"
-              class="section-img"
-              loading="lazy"
-            />
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery carousel -->
-    <div class="gallery-carousel" aria-hidden="true">
-      <div class="gallery-track">
-        <div class="gallery-slide"><img src="assets/photo-04.jpg" alt="Colour range of threads" /></div>
-        <div class="gallery-slide"><img src="assets/photo-07.avif" alt="Textile colour samples" /></div>
-        <div class="gallery-slide"><img src="assets/photo-08.jpg" alt="Folded fabric samples" /></div>
-        <div class="gallery-slide"><img src="assets/photo-05.jpg" alt="Textile samples" /></div>
-        <div class="gallery-slide"><img src="assets/photo-06.jpg" alt="Fabric detail" /></div>
-        <!-- Duplicate for seamless loop -->
-        <div class="gallery-slide"><img src="assets/photo-04.jpg" alt="" /></div>
-        <div class="gallery-slide"><img src="assets/photo-07.avif" alt="" /></div>
-        <div class="gallery-slide"><img src="assets/photo-08.jpg" alt="" /></div>
-        <div class="gallery-slide"><img src="assets/photo-05.jpg" alt="" /></div>
-        <div class="gallery-slide"><img src="assets/photo-06.jpg" alt="" /></div>
-      </div>
-    </div>
-
-    <!-- ============================================================
-         SERVICES
-         ============================================================ -->
-    <section id="services" aria-labelledby="services-heading">
-      <div class="container">
-
-        <div class="services-header">
-          <span class="section-label reveal">What we offer</span>
-          <h2 id="services-heading" class="reveal reveal-d1">Our Services</h2>
-          <p class="reveal reveal-d2">
-            Every project starts with listening. We offer end-to-end
-            solutions from initial design to final packaging.
-          </p>
-        </div>
-
-        <div class="services-grid">
-
-          <article class="service-card reveal">
-            <span class="service-card-number">01</span>
-            <h3>Custom Design &amp; Manufacturing</h3>
-            <p>
-              We design and manufacture textile sample books to your exact
-              specifications — from material and color selection to the final
-              format and presentation structure.
-            </p>
-          </article>
-
-          <article class="service-card reveal reveal-d1">
-            <span class="service-card-number">02</span>
-            <h3>Color Collections &amp; Palettes</h3>
-            <p>
-              We create exclusive color collections and palettes that precisely
-              reflect your brand identity and seasonal requirements.
-            </p>
-          </article>
-
-          <article class="service-card reveal reveal-d2">
-            <span class="service-card-number">03</span>
-            <h3>Complete Processing &amp; Packaging</h3>
-            <p>
-              We handle everything from sampling to final packaging — elegant
-              covers, practical presentation formats, and professional finishing
-              of every detail.
-            </p>
-          </article>
-
-          <article class="service-card reveal reveal-d3">
-            <span class="service-card-number">04</span>
-            <h3>Consulting &amp; Advisory</h3>
-            <p>
-              Have a vision but unsure how to execute it? We advise on
-              material selection, production technology, and design — from
-              concept to finished sample book.
-            </p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         WHY STOFFA
-         ============================================================ -->
-    <section id="why" aria-labelledby="why-heading">
-      <div class="container">
-        <div class="why-inner">
-
-          <div class="why-logo-box">
-            <img src="assets/logo-white.png" alt="Stoffa logo" />
-            <div class="why-logo-accent"></div>
-            <p class="why-logo-tagline">Sample book manufacturing<br>at world-class level</p>
-          </div>
-
-          <div class="why-content-col">
-            <span class="section-label reveal">Our values</span>
-            <h2 id="why-heading" class="reveal reveal-d1">Why Stoffa</h2>
-
-            <div class="why-list">
-
-              <div class="why-item reveal reveal-d2">
-                <h3>Precision</h3>
-                <p>Every sample book leaves our facility after thorough quality control. No compromises.</p>
-              </div>
-
-              <div class="why-item reveal reveal-d3">
-                <h3>Tailored</h3>
-                <p>We don't work with templates. Every project is an original, designed precisely for your brand.</p>
-              </div>
-
-              <div class="why-item reveal reveal-d4">
-                <h3>Reliability</h3>
-                <p>We meet deadlines and keep our word. A dependable partner for your business.</p>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         REFERENCES
-         ============================================================ -->
-    <section id="references" aria-labelledby="references-heading">
-      <div class="container">
-
-        <div class="references-header">
-          <span class="section-label reveal">What clients say</span>
-          <h2 id="references-heading" class="reveal reveal-d1">References</h2>
-        </div>
-
-        <div class="references-grid">
-
-          <article class="testimonial-card">
-            <p class="testimonial-text">
-              Working with Stoffa exceeded my expectations. The sample books are not only
-              beautiful but perfectly functional. Luxury in every detail.
-            </p>
-            <div class="testimonial-author">
-              <div class="testimonial-author-avatar"><i class="fa-solid fa-user"></i></div>
-              <div>
-                <div class="testimonial-author-name">Petra K.</div>
-                <div class="testimonial-author-role">Fashion Designer</div>
-              </div>
-            </div>
-          </article>
-
-          <article class="testimonial-card">
-            <p class="testimonial-text">
-              Finally someone who understands how important presentation is. Your sample books
-              are exactly what we needed — precise, elegant, and tailored to us.
-            </p>
-            <div class="testimonial-author">
-              <div class="testimonial-author-avatar"><i class="fa-solid fa-user"></i></div>
-              <div>
-                <div class="testimonial-author-name">Martin D.</div>
-                <div class="testimonial-author-role">Interior Designer</div>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         CONTACT
-         ============================================================ -->
-    <section id="contact" aria-labelledby="contact-heading">
-      <div class="container">
-        <div class="contact-grid">
-
-          <div class="contact-form-col">
-            <span class="section-label reveal">Reach out</span>
-            <h2 id="contact-heading" class="reveal reveal-d1">Get in Touch</h2>
-
-            <form id="contact-form" action="" method="post" novalidate class="reveal reveal-d2">
-
-              <div class="form-group" data-field="name">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" autocomplete="name" placeholder="John Smith" />
-                <span class="form-error-msg" aria-live="polite"></span>
-              </div>
-
-              <div class="form-group" data-field="company">
-                <label for="company">Company</label>
-                <input type="text" id="company" name="company" autocomplete="organization" placeholder="Your Company Ltd." />
-                <span class="form-error-msg" aria-live="polite"></span>
-              </div>
-
-              <div class="form-group" data-field="email">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" autocomplete="email" placeholder="john@company.com" />
-                <span class="form-error-msg" aria-live="polite"></span>
-              </div>
-
-              <div class="form-group" data-field="message">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Tell us about your project or enquiry…"></textarea>
-                <span class="form-error-msg" aria-live="polite"></span>
-              </div>
-
-              <button type="submit" class="form-submit">Send Message</button>
-
-            </form>
-
-            <div id="form-success" class="form-success" role="alert">
-              <svg class="success-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <circle cx="32" cy="32" r="31" stroke="#E8631A" stroke-width="2"/>
-                <path d="M18 32l10 10 18-20" stroke="#E8631A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <h3>Message Sent</h3>
-              <p>We'll get back to you within 24 hours.</p>
-              <button id="form-reset" class="form-reset">Send another message</button>
-            </div>
-          </div>
-
-          <div class="contact-info-col reveal reveal-d2">
-            <h3>Contact Details</h3>
-
-            <div class="contact-detail">
-              <strong>Company</strong>
-              <span>Stoffa s.r.o.</span>
-            </div>
-
-            <div class="contact-detail">
-              <strong>Address</strong>
-              <span>Slovákova 279/11<br />602 00 Brno, Czech Republic</span>
-            </div>
-
-            <div class="contact-detail">
-              <strong>Email</strong>
-              <a href="mailto:info@stoffa.cz">info@stoffa.cz</a>
-            </div>
-
-            <div class="contact-detail" style="margin-top:48px;padding-top:32px;border-top:1px solid var(--border);">
-              <strong>Office Hours</strong>
-              <span>Mon – Fri: 8:00 – 17:00</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ============================================================
-       FOOTER
-       ============================================================ -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="footer-top-inner">
-
-          <div class="footer-brand">
-            <img src="assets/logo-white.png" alt="Stoffa" class="footer-logo-img" />
-            <p class="footer-tagline">Sample book manufacturing at world-class level.<br>Precision in every detail.</p>
-          </div>
-
-          <nav class="footer-nav" aria-label="Footer navigation">
-            <span class="footer-nav-label">Navigation</span>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#why">Why Stoffa</a>
-            <a href="#references">References</a>
-            <a href="#contact">Contact</a>
-          </nav>
-
-          <div class="footer-contact-col">
-            <span class="footer-nav-label">Contact</span>
-            <a href="mailto:info@stoffa.cz" class="footer-contact-link"><i class="fa-solid fa-envelope"></i> info@stoffa.cz</a>
-            <span class="footer-contact-link"><i class="fa-solid fa-location-dot"></i> Slovákova 279/11, Brno</span>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="footer-bottom-inner">
-          <span class="footer-copy">© 2025 STOFFA s.r.o. — All rights reserved</span>
-          <div class="footer-lang">
-            <a href="index.html">CZ</a>
-            <span>|</span>
-            <a href="index-en.html" class="active">EN</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Mobile Bottom CTA -->
-  <button id="mobile-cta" aria-label="Request a quote — scroll to contact">
-    Request a Quote &rarr;
-  </button>
-
-  <script src="js/main.js"></script>
-</body>
-</html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sample books at the level of your brand — STOFFA s.r.o.</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"><style>*{margin:0;padding:0;box-sizing:border-box}
+:root{--o:#EB8860;--od:#D4702A;--ol:#F2A074;--dk:#1A1917;--tx:#4A4743;--txl:#706C67;--bg:#FAFAF8;--cr:#F5F3EF;--gy:#EDEAE5;--gy2:#D9D5CE;--hd:'DM Serif Display',Georgia,serif;--bd:'Montserrat',Helvetica,sans-serif}
+html{scroll-behavior:smooth;overflow-x:hidden}body{font-family:var(--bd);color:var(--tx);background:var(--bg);cursor:none;overflow-x:hidden;font-weight:400}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+.cur{position:fixed;width:10px;height:10px;border-radius:50%;background:var(--o);pointer-events:none;z-index:10000;transition:transform .2s cubic-bezier(.16,1,.3,1),opacity .2s;mix-blend-mode:difference;transform:translate(-50%,-50%)}.cur-r{position:fixed;width:36px;height:36px;border-radius:50%;border:1.5px solid var(--o);pointer-events:none;z-index:9999;transition:transform .35s cubic-bezier(.16,1,.3,1),opacity .2s,width .3s,height .3s;mix-blend-mode:difference;transform:translate(-50%,-50%);opacity:.5}.cur.h{transform:translate(-50%,-50%) scale(0)}.cur-r.h{width:60px;height:60px;opacity:.3}@media(max-width:900px){.cur,.cur-r{display:none}body{cursor:auto}}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:22px 60px;display:flex;align-items:center;justify-content:space-between;transition:all .5s cubic-bezier(.16,1,.3,1)}nav.sc{background:rgba(250,250,248,.96);backdrop-filter:blur(16px);box-shadow:0 1px 30px rgba(0,0,0,.06);padding:14px 60px}.nl img{height:52px;transition:height .3s}nav.sc .nl img{height:42px}.nk{display:flex;gap:36px;align-items:center}.nk a{font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;position:relative;padding:4px 0;color:var(--tx)}.nk a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:1.5px;background:var(--o);transition:width .4s cubic-bezier(.16,1,.3,1)}.nk a:hover::after{width:100%}.nk a:hover{color:var(--dk)}.ls{display:flex;gap:10px;margin-left:24px;border-left:1px solid var(--gy2);padding-left:24px}.lb{font-size:11px;font-weight:700;letter-spacing:.5px;width:36px;height:36px;display:inline-flex;align-items:center;justify-content:center;border:1.5px solid var(--gy2);border-radius:50%;cursor:pointer;transition:all .3s;background:transparent;font-family:var(--bd);color:var(--tx);text-decoration:none}.lb.act{background:var(--o);color:#fff;border-color:var(--o)}.hb{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:101}.hb span{width:26px;height:2px;background:var(--dk);transition:all .3s}.mm{display:none;position:fixed;inset:0;background:var(--bg);z-index:99;flex-direction:column;align-items:center;justify-content:center;gap:28px}.mm.op{display:flex}.mm a{font-size:20px;font-family:var(--hd);font-weight:400}@media(max-width:900px){nav{padding:16px 20px}nav.sc{padding:12px 20px}.nk{display:none}.hb{display:flex}}
+.rv{opacity:0;transform:translateY(36px);transition:all .9s cubic-bezier(.16,1,.3,1)}.rv.vis{opacity:1;transform:translateY(0)}.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}.d5{transition-delay:.5s}
+section{padding:120px 60px}@media(max-width:768px){section{padding:80px 20px}}.st{display:inline-flex;align-items:center;gap:10px;font-size:11px;letter-spacing:3.5px;text-transform:uppercase;font-weight:600;color:var(--o);margin-bottom:16px}.st::before{content:'';width:30px;height:1.5px;background:var(--o)}.sh{font-family:var(--hd);font-size:clamp(30px,3.8vw,52px);font-weight:400;color:var(--dk);margin-bottom:20px;line-height:1.15}.sd{font-size:15px;line-height:1.85;max-width:580px;margin-bottom:60px;color:var(--txl)}
+.bp{display:inline-flex;align-items:center;gap:10px;background:var(--o);color:#fff;padding:15px 32px;font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;transition:all .4s cubic-bezier(.16,1,.3,1);border:2px solid var(--o);font-family:var(--bd);cursor:pointer}.bp:hover{background:var(--dk);border-color:var(--dk);transform:translateY(-2px)}.bp svg{transition:transform .3s}.bp:hover svg{transform:translateX(4px)}.bo{display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--dk);padding:15px 32px;font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;transition:all .4s;border:2px solid var(--gy2);font-family:var(--bd);cursor:pointer}.bo:hover{border-color:var(--o);color:var(--o)}
+.hero{display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}.hl{display:flex;flex-direction:column;justify-content:center;padding:100px 60px 40px}.htag{display:inline-flex;align-items:center;gap:10px;font-size:11px;letter-spacing:3.5px;text-transform:uppercase;font-weight:600;color:var(--o);margin-bottom:24px}.htag::before{content:'';width:40px;height:1.5px;background:var(--o)}.hero h1{font-family:var(--hd);font-size:clamp(36px,4.2vw,60px);font-weight:400;line-height:1.12;color:var(--dk);margin-bottom:20px}.hero h1 em{font-style:italic;color:var(--o)}.hdesc{font-size:15px;line-height:1.8;color:var(--txl);max-width:480px;margin-bottom:28px}.hcta{display:flex;gap:14px;flex-wrap:wrap}.hr{position:relative;overflow:hidden}.hr img{width:100%;height:100%;object-fit:cover;animation:hz 25s ease-in-out infinite alternate}.hr::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--bg) 0%,transparent 12%)}@keyframes hz{0%{transform:scale(1.04)}100%{transform:scale(1)}}
+.hcar{width:100%;height:320px;margin-top:40px;position:relative;overflow:hidden;border:1px solid var(--gy);background:#fff;box-shadow:0 8px 36px rgba(0,0,0,.08)}.hcar-track{display:flex;flex-direction:column;animation:hslide 15s ease-in-out infinite}.hcar-item{min-height:320px;display:flex;align-items:center;gap:28px;padding:24px}.hcar-item img{width:180px;height:272px;object-fit:cover;border-radius:6px;flex-shrink:0}.hcar-info{display:flex;flex-direction:column;gap:10px;flex:1}.hcar-info span{font-size:20px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dk)}.hcar-info small{font-size:14px;color:var(--txl);line-height:1.7}.hcar-dots{position:absolute;bottom:10px;right:14px;display:flex;gap:5px}.hcar-dots i{width:8px;height:8px;border-radius:50%;background:var(--gy2);transition:all .3s}.hcar-dots i.ac{background:var(--o);width:24px;border-radius:4px}@keyframes hslide{0%,16%{transform:translateY(0)}20%,36%{transform:translateY(-320px)}40%,56%{transform:translateY(-640px)}60%,76%{transform:translateY(-960px)}80%,96%{transform:translateY(-1280px)}100%{transform:translateY(0)}}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hl{padding:90px 24px 30px}.hr{height:300px}.hr::after{background:linear-gradient(to top,var(--bg) 0%,transparent 20%)}.hcar{height:260px}.hcar-item{min-height:260px;padding:16px}.hcar-item img{width:120px;height:220px}}
+.mq{overflow:hidden;background:var(--o);padding:14px 0;white-space:nowrap}.mqt{display:flex;animation:m 35s linear infinite}.mqt span{font-family:var(--hd);font-size:16px;font-weight:400;color:#fff;padding:0 32px;flex-shrink:0}.mqt .dt{font-size:8px;opacity:.5}@keyframes m{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.products{background:var(--cr)}.pg{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:28px}.pc{background:#fff;overflow:hidden;position:relative;transition:transform .5s cubic-bezier(.16,1,.3,1),box-shadow .5s;cursor:pointer;color:inherit}.pc:hover{transform:translateY(-6px);box-shadow:0 24px 60px rgba(0,0,0,.08)}.pci{height:340px;overflow:hidden;position:relative}.pci img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.16,1,.3,1)}.pc:hover .pci img{transform:scale(1.06)}.pci .pcb{position:absolute;top:20px;left:20px;background:var(--o);color:#fff;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:8px 16px;z-index:2}.pcbd{padding:32px 28px}.pcbd h3{font-family:var(--hd);font-size:24px;font-weight:400;color:var(--dk);margin-bottom:14px}.pcbd p{font-size:14px;line-height:1.75;color:var(--txl)}.pctg{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}.pctg span{font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;padding:5px 12px;border:1px solid var(--gy);color:var(--txl);border-radius:20px}
+.fg2{display:grid;grid-template-columns:repeat(3,1fr);gap:40px 50px}@media(max-width:900px){.fg2{grid-template-columns:1fr 1fr}}@media(max-width:560px){.fg2{grid-template-columns:1fr}}.ft2{position:relative;padding-left:48px}.ft2::before{content:'';position:absolute;left:0;top:6px;width:24px;height:2px;background:var(--o)}.ft2::after{content:'';position:absolute;left:0;top:16px;width:14px;height:2px;background:var(--o);opacity:.4}.ft2 h4{font-family:var(--hd);font-size:20px;font-weight:400;color:var(--dk);margin-bottom:10px}.ft2 p{font-size:13px;line-height:1.75;color:var(--txl)}
+.process{background:var(--cr)}.prg{display:grid;grid-template-columns:repeat(4,1fr);gap:40px}@media(max-width:900px){.prg{grid-template-columns:1fr 1fr}}@media(max-width:560px){.prg{grid-template-columns:1fr}}.ps{padding:36px 28px;background:#fff;border-top:3px solid var(--o);transition:transform .3s,box-shadow .3s}.ps:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.06)}.psn{font-family:var(--hd);font-size:48px;font-weight:400;color:var(--o);opacity:.2;margin-bottom:16px}.ps h3{font-family:var(--hd);font-size:20px;font-weight:400;color:var(--dk);margin-bottom:12px}.ps p{font-size:13px;line-height:1.75;color:var(--txl)}
+.gallery{background:var(--dk);color:#fff}.gallery .st{color:var(--ol)}.gallery .sh{color:#fff}.gallery .sd{color:rgba(255,255,255,.5)}.gg{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:200px;gap:12px}.gi{overflow:hidden;position:relative}.gi img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.16,1,.3,1)}.gi:hover img{transform:scale(1.05)}.g1{grid-column:span 5;grid-row:span 2}.g2{grid-column:span 4}.g3{grid-column:span 3}.g4{grid-column:span 3}.g5{grid-column:span 4}@media(max-width:768px){.gg{grid-template-columns:1fr 1fr;grid-auto-rows:180px}.g1,.g2,.g3,.g4,.g5{grid-column:span 1;grid-row:span 1}.g1{grid-column:span 2}}
+.contact{background:var(--dk);color:#fff;position:relative;overflow:hidden}.contact .st{color:var(--ol)}.contact .sh{color:#fff}.contact .sd{color:rgba(255,255,255,.5)}.cg{display:grid;grid-template-columns:1fr 1.2fr;gap:80px;position:relative;z-index:2}.ci h3{font-family:var(--hd);font-size:28px;font-weight:400;color:#fff;margin-bottom:24px}.ci p{margin-bottom:14px;line-height:1.75;font-size:14px;color:rgba(255,255,255,.5)}.ci a{color:var(--o);font-weight:600;border-bottom:1px solid var(--o)}.cd{margin-top:36px;padding-top:36px;border-top:1px solid rgba(255,255,255,.08)}.cd h4{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.7);margin-bottom:16px}.cf{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:40px}.cf .fg{margin-bottom:20px}.cf .fg label{display:block;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:8px;color:rgba(255,255,255,.6)}.cf .fg input,.cf .fg textarea{width:100%;padding:14px 18px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);font-size:14px;font-family:var(--bd);transition:border .3s;outline:none;color:#fff}.cf .fg input:focus,.cf .fg textarea:focus{border-color:var(--o)}.cf .fg textarea{height:120px;resize:vertical}.cf .fr{display:grid;grid-template-columns:1fr 1fr;gap:20px}.cf .sub{width:100%;background:var(--o);color:#fff;border:none;padding:18px;font-size:13px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;cursor:pointer;font-family:var(--bd);transition:all .3s;display:flex;align-items:center;justify-content:center;gap:10px;margin-top:8px}.cf .sub:hover{background:#fff;color:var(--dk)}@media(max-width:768px){.cg{grid-template-columns:1fr}.cf .fr{grid-template-columns:1fr}.cf{padding:28px}}
+@media(max-width:900px){#about>div{grid-template-columns:1fr !important}#about>div>div:first-child{min-height:350px !important}}
+footer{background:#111;padding:0}.ft-main{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:50px;padding:60px;border-bottom:1px solid rgba(255,255,255,.06)}.ft-brand{display:flex;flex-direction:column;gap:20px;align-items:flex-start}.ft-brand img{height:32px;width:auto;object-fit:contain;background:none!important}.ft-brand p{font-size:13px;line-height:1.8;color:rgba(255,255,255,.35);max-width:300px}.ft-col h5{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:20px}.ft-col a,.ft-col p{display:block;font-size:13px;line-height:2.2;color:rgba(255,255,255,.3);transition:color .2s}.ft-col a:hover{color:var(--o)}.ft-bot{display:flex;justify-content:space-between;align-items:center;padding:24px 60px;font-size:11px;color:rgba(255,255,255,.2);letter-spacing:1px}@media(max-width:768px){.ft-main{grid-template-columns:1fr 1fr;gap:30px;padding:40px 24px}.ft-bot{flex-direction:column;gap:12px;text-align:center;padding:20px 24px}}
+.stt{position:fixed;bottom:32px;right:32px;width:44px;height:44px;background:var(--o);color:#fff;border:none;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:90;opacity:0;transform:translateY(20px);transition:all .3s;font-size:18px}.stt.sh{opacity:1;transform:translateY(0)}.stt:hover{background:var(--dk)}
+.ck-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:300;display:none;align-items:flex-end;justify-content:center}.ck-overlay.show{display:flex}
+.ck-box{background:#fff;max-width:540px;width:100%;margin:0 0 40px;padding:36px;box-shadow:0 20px 60px rgba(0,0,0,.2);position:relative}
+.ck-box h3{font-family:var(--hd);font-size:22px;font-weight:400;color:var(--dk);margin-bottom:12px}
+.ck-box p{font-size:13px;line-height:1.7;color:var(--txl);margin-bottom:20px}
+.ck-box a{color:var(--o);text-decoration:underline}
+.ck-toggles{border-top:1px solid var(--gy);padding-top:16px;margin-bottom:24px}
+.ck-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--gy)}
+.ck-row span{font-size:13px;font-weight:600;color:var(--dk)}
+.ck-row small{font-size:11px;color:var(--txl)}
+.ck-row label{position:relative;width:40px;height:22px;cursor:pointer}
+.ck-row input{opacity:0;width:0;height:0}
+.ck-slider{position:absolute;inset:0;background:var(--gy2);border-radius:22px;transition:.3s}
+.ck-slider::before{content:'';position:absolute;width:16px;height:16px;left:3px;bottom:3px;background:#fff;border-radius:50%;transition:.3s}
+.ck-row input:checked+.ck-slider{background:var(--o)}
+.ck-row input:checked+.ck-slider::before{transform:translateX(18px)}
+.ck-row input:disabled+.ck-slider{opacity:.6;cursor:not-allowed}
+.ck-btns{display:flex;gap:10px}
+.ck-btns button{flex:1;padding:14px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;font-family:var(--bd);border:none;transition:all .3s}
+.ck-accept{background:var(--o);color:#fff}.ck-accept:hover{background:var(--dk)}
+.ck-save{background:var(--gy);color:var(--dk)}.ck-save:hover{background:var(--gy2)}
+@media(max-width:768px){.ck-box{margin:0;max-width:100%}.ck-btns{flex-direction:column}}
+.pp-hero{height:50vh;min-height:360px;position:relative;overflow:hidden}.pp-hero img{width:100%;height:100%;object-fit:cover}.pp-hero::after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 30%,rgba(26,25,23,.75))}.pp-hero-text{position:absolute;bottom:50px;left:60px;color:#fff;z-index:2}.pp-hero-text .st{color:var(--ol)}.pp-hero-text h1{font-family:var(--hd);font-size:clamp(36px,5vw,56px);font-weight:400;margin-top:10px}
+.pp-body{max-width:900px;margin:0 auto;padding:80px 40px}.pp-body h2{font-family:var(--hd);font-size:30px;font-weight:400;color:var(--dk);margin-bottom:20px;margin-top:50px}.pp-body h2:first-child{margin-top:0}.pp-body p{font-size:15px;line-height:1.85;color:var(--txl);margin-bottom:16px}.pp-body p strong{color:var(--dk);font-weight:600}
+.pp-specs{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:40px 0}.pp-spec{padding:24px;background:var(--cr);border-left:3px solid var(--o)}.pp-spec h4{font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dk);margin-bottom:6px}.pp-spec p{font-size:13px;color:var(--txl);margin:0}
+.pp-cta{display:flex;gap:16px;margin-top:50px;padding-top:40px;border-top:1px solid var(--gy)}.pp-nav{display:flex;justify-content:space-between;max-width:900px;margin:0 auto;padding:0 40px 80px}.pp-nav a{font-size:13px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--txl);transition:color .3s}.pp-nav a:hover{color:var(--o)}
+@media(max-width:768px){.pp-hero-text{left:24px;bottom:30px}.pp-body{padding:50px 24px}.pp-specs{grid-template-columns:1fr}.pp-cta{flex-direction:column}.pp-nav{padding:0 24px 60px}}
+.proc-video{margin-top:60px;position:relative;overflow:hidden;border-radius:0}
+.proc-video video{width:100%;display:block}
+.proc-video-overlay{position:absolute;inset:0;background:linear-gradient(transparent 60%,rgba(26,25,23,.6));pointer-events:none}
+</style></head><body><div class="cur" id="c"></div><div class="cur-r" id="cr"></div>
+<nav id="nav"><a href="index-en.html" class="nl"><img src="img/logo.png" alt="Stoffa"></a><div class="nk"><a href="index-en.html#products">Products</a><a href="index-en.html#process">Process</a><a href="index-en.html#gallery">Gallery</a><a href="index-en.html#about">About</a><a href="index-en.html#contact">Contact</a><div class="ls"><a href="index.html" class="lb">CZ</a><a href="index-en.html" class="lb act">EN</a><a href="index-de.html" class="lb">DE</a></div></div><div class="hb" onclick="toggleMenu()"><span></span><span></span><span></span></div></nav>
+<div class="mm" id="mm"><a href="index-en.html#products" onclick="toggleMenu()">Products</a><a href="index-en.html#process" onclick="toggleMenu()">Process</a><a href="index-en.html#gallery" onclick="toggleMenu()">Gallery</a><a href="index-en.html#about" onclick="toggleMenu()">About</a><a href="index-en.html#contact" onclick="toggleMenu()">Contact</a></div>
+<section class="hero" id="hero"><div class="hl"><div class="htag">Stoffa s.r.o.</div><h1>Sample books at the level of <em>your brand</em></h1><p class="hdesc">We manufacture textile sample books for brands that don't compromise. Precision craftsmanship, modern technology, delivery on your schedule.</p><div class="hcta"><a href="#contact" class="bp">Request a Quote <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9h10M10 5l4 4-4 4"/></svg></a><a href="#products" class="bo">Our Products</a></div>
+<div class="hcar" id="hcar"><div class="hcar-track" id="hcarTrack"><div class="hcar-item"><img src="img/carousel-kniha.jpg" alt=""><div class="hcar-info"><span>Sample Book</span><small>Classic book format for extensive textile collections</small></div></div><div class="hcar-item"><img src="img/carousel-vodopad.jpg" alt=""><div class="hcar-info"><span>Waterfall Sample</span><small>Cascade overview of the entire collection at a glance</small></div></div><div class="hcar-item"><img src="img/carousel-handmuster.jpg" alt=""><div class="hcar-info"><span>Handmuster</span><small>Hand samples with emphasis on tactile experience</small></div></div><div class="hcar-item"><img src="img/carousel-karty.jpg" alt=""><div class="hcar-info"><span>Swatch Fan</span><small>Fabric Swatch Ring — compact presentation on a ring</small></div></div><div class="hcar-item"><img src="img/carousel-serie.jpg" alt=""><div class="hcar-info"><span>Sample Series</span><small>Large-scale production with guaranteed uniform quality</small></div></div></div><div class="hcar-dots"><i class="ac"></i><i></i><i></i><i></i><i></i></div></div>
+</div><div class="hr"><img src="img/hero.jpg" alt="Stoffa"></div></section>
+<div class="mq"><div class="mqt"><span>Precision craftsmanship</span><span class="dt">✦</span><span>Modern technology</span><span class="dt">✦</span><span>Quality guarantee</span><span class="dt">✦</span><span>Fast delivery</span><span class="dt">✦</span><span>Brand presentation</span><span class="dt">✦</span><span>Approval process</span><span class="dt">✦</span><span>From piece to series</span><span class="dt">✦</span><span>Precision craftsmanship</span><span class="dt">✦</span><span>Modern technology</span><span class="dt">✦</span><span>Quality guarantee</span><span class="dt">✦</span><span>Fast delivery</span><span class="dt">✦</span><span>Brand presentation</span><span class="dt">✦</span><span>Approval process</span><span class="dt">✦</span><span>From piece to series</span><span class="dt">✦</span></div></div>
+<section class="products" id="products"><div class="rv" style="max-width:700px"><div class="st">Our Products</div><h2 class="sh">Complete solutions for presenting your collection</h2><p class="sd">Every project is unique to us. We offer a wide portfolio of sample book formats that precisely match your brand's needs.</p></div><div class="pg">
+<a href="kniha-en.html" class="pc rv"><div class="pci"><div class="pcb">01</div><img src="img/product-kniha.jpg" alt=""></div><div class="pcbd"><h3>Sample Book</h3><p>Classic book format — the essential tool for presenting extensive textile collections with elegant binding and branding.</p><div class="pctg"><span>Fabric collections</span><span>Custom cover</span><span>Logo embossing</span></div></div></a>
+<a href="vodopad-en.html" class="pc rv d1"><div class="pci"><div class="pcb">02</div><img src="img/product-vodopad.jpg" alt=""></div><div class="pcbd"><h3>Waterfall Sample</h3><p>Cascade arrangement of samples with instant visual overview of the entire collection — ideal for showrooms.</p><div class="pctg"><span>Showroom</span><span>Quick overview</span><span>Compact</span></div></div></a>
+<a href="handmuster-en.html" class="pc rv d2"><div class="pci"><div class="pcb">03</div><img src="img/product-handmuster.jpg" alt=""></div><div class="pcbd"><h3>Handmuster</h3><p>Individual hand samples with maximum emphasis on tactile experience for premium collections.</p><div class="pctg"><span>Premium</span><span>Tactile experience</span><span>Bespoke</span></div></div></a>
+<a href="vejir-en.html" class="pc rv d3"><div class="pci"><div class="pcb">04</div><img src="img/product-karty.jpg" alt=""></div><div class="pcbd"><h3>Swatch Fan — Fabric Swatch Ring</h3><p>Compact presentation of samples on a ring — quick access to all materials in one practical format.</p><div class="pctg"><span>Compact</span><span>Quick overview</span><span>Practical</span></div></div></a>
+</div></section>
+<section id="features"><div class="rv" style="max-width:700px"><div class="st">Standards</div><h2 class="sh">The benchmarks that define our work</h2></div><div class="fg2"><div class="ft2 rv d0"><h4>Technology</h4><p>We invest in machinery that guarantees repeatable precision in every production cycle.</p></div><div class="ft2 rv d1"><h4>Approval Process</h4><p>No sample book leaves production without your sign-off. Prototype — revision — approval — production.</p></div><div class="ft2 rv d2"><h4>Brand Identity</h4><p>A sample book is an extension of your brand. Cover, embossing, stitching — every element aligns with your brand guidelines.</p></div><div class="ft2 rv d3"><h4>Fast Delivery</h4><p>Collections run on fixed schedules. Our capacity is designed so your sample books are ready exactly on time.</p></div><div class="ft2 rv d4"><h4>Scalability</h4><p>A single prototype and a run of thousands go through identical production standards.</p></div><div class="ft2 rv d5"><h4>Quality Control</h4><p>Multi-level quality control at every production stage. We measure, inspect, document.</p></div></div></section>
+<section class="process" id="process"><div class="rv" style="max-width:700px"><div class="st">Our Process</div><h2 class="sh">From concept to complete sample book</h2><p class="sd">We collaborate with you at every stage — from the initial brief to final delivery.</p></div><div class="prg"><div class="ps rv d0"><div class="psn">01</div><h3>Consultation & Briefing</h3><p>Together we define requirements for format, design and specifications.</p></div><div class="ps rv d1"><div class="psn">02</div><h3>Design & Prototype</h3><p>We create a prototype for approval. Every detail is refined for your brand.</p></div><div class="ps rv d2"><div class="psn">03</div><h3>Production & QC</h3><p>After approval, production begins with ongoing quality control.</p></div><div class="ps rv d3"><div class="psn">04</div><h3>Shipping & Distribution</h3><p>Carefully packaged sample books delivered anywhere in Europe.</p></div></div></section>
+<section class="gallery" id="gallery"><div class="rv"><div class="st">Gallery</div><h2 class="sh">Take a closer look at our work</h2><p class="sd">Our work speaks louder than words. Every detail counts.</p></div><div class="gg rv"><div class="gi g1"><img src="img/gallery-1.jpg" alt=""></div><div class="gi g2"><img src="img/gallery-2.jpg" alt=""></div><div class="gi g3"><img src="img/gallery-3.jpg" alt=""></div><div class="gi g4"><img src="img/gallery-4.jpg" alt=""></div><div class="gi g5"><img src="img/gallery-5.jpg" alt=""></div></div></section>
+<section id="about" style="padding:0;overflow:hidden"><div style="display:grid;grid-template-columns:1fr 1fr;min-height:560px"><div style="position:relative;overflow:hidden"><img src="img/about.jpg" alt="" style="width:100%;height:100%;object-fit:cover"><div style="position:absolute;inset:0;background:rgba(10,10,8,.75)"></div><div style="position:absolute;bottom:50px;left:50px;right:50px;color:#fff"><div style="font-family:var(--hd);font-size:clamp(28px,3vw,40px);font-weight:400;line-height:1.2;margin-bottom:16px">Where precision<br>manufacturing meets<br>your brand vision.</div><div style="width:60px;height:3px;background:var(--o);margin-bottom:16px"></div><p style="font-size:14px;line-height:1.7;opacity:.55;max-width:400px">A team with international experience in sample book production for textile, interior and automotive industries.</p></div></div>
+<div style="padding:80px 60px;display:flex;flex-direction:column;justify-content:center;background:var(--cr)"><div class="rv"><div class="st">About Us</div><h2 style="font-family:var(--hd);font-size:clamp(26px,2.8vw,38px);font-weight:400;color:var(--dk);margin-bottom:24px;line-height:1.2">Manufacturing partner for demanding projects</h2><p style="font-size:15px;line-height:1.85;color:var(--txl);margin-bottom:20px">Our team has <strong style="color:var(--dk)">over 15 years of experience</strong> manufacturing sample books for international clients. We combine machine precision with individual attention to every project.</p><p style="font-size:15px;line-height:1.85;color:var(--txl);margin-bottom:36px">We supply clients across textile, interior and technical segments throughout Europe.</p></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--gy2)" class="rv d1"><div style="padding:24px;border-right:1px solid var(--gy2)"><div style="font-family:var(--hd);font-size:36px;font-weight:400;color:var(--o)">15+</div><div style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--txl);margin-top:4px">Years experience</div></div><div style="padding:24px"><div style="font-family:var(--hd);font-size:36px;font-weight:400;color:var(--o)">EU</div><div style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--txl);margin-top:4px">Clients across Europe</div></div><div style="padding:24px;border-right:1px solid var(--gy2);border-top:1px solid var(--gy2)"><div style="font-family:var(--hd);font-size:36px;font-weight:400;color:var(--o)">100%</div><div style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--txl);margin-top:4px">Quality control</div></div><div style="padding:24px;border-top:1px solid var(--gy2)"><div style="font-family:var(--hd);font-size:36px;font-weight:400;color:var(--o)">500+</div><div style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--txl);margin-top:4px">Projects per year</div></div></div></div></div></section>
+<section class="contact" id="contact"><div class="rv" style="max-width:700px"><div class="st">Contact</div><h2 class="sh">Ready for your next project</h2></div><div class="cg"><div class="ci rv"><h3>STOFFA s.r.o.</h3><p>Slováková 279/11<br>602 00 Brno<br>Czech Republic</p><div class="cd"><h4>Contact person</h4><p style="color:rgba(255,255,255,.7);font-weight:600">Petr Kudláček</p><p>M: <a href="tel:+420734732662">+420 734 732 662</a></p><p>E: <a href="mailto:kudlacek@stoffa.cz">kudlacek@stoffa.cz</a></p></div></div>
+<div class="cf rv d1"><div class="fr"><div class="fg"><label>Name</label><input type="text"></div><div class="fg"><label>Company</label><input type="text"></div></div><div class="fr"><div class="fg"><label>Email</label><input type="email"></div><div class="fg"><label>Phone</label><input type="tel"></div></div><div class="fg"><label>Message</label><textarea></textarea></div><button class="sub">Send Inquiry <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9h10M10 5l4 4-4 4"/></svg></button></div></div></section><button class="stt" id="stt" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button><footer><div class="ft-main"><div class="ft-brand"><img src="img/logo-light.png" alt="Stoffa"><p>Textile sample book manufacturing for international clients. Books, waterfalls, handmuster, swatch fans — from prototype to series.</p></div><div class="ft-col"><h5>Products</h5><a href="kniha-en.html">Sample Book</a><a href="vodopad-en.html">Waterfall Sample</a><a href="handmuster-en.html">Handmuster</a><a href="vejir-en.html">Swatch Fan</a></div><div class="ft-col"><h5>Company</h5><a href="index-en.html#about">About Us</a><a href="index-en.html#process">Our Process</a><a href="index-en.html#gallery">Gallery</a><a href="index-en.html#contact">Contact</a></div><div class="ft-col"><h5>Contact</h5><p>Slováková 279/11<br>602 00 Brno</p><p style="color:rgba(255,255,255,.5);font-weight:600;margin-top:8px">Petr Kudláček</p><a href="tel:+420734732662" style="color:var(--o)">+420 734 732 662</a><a href="mailto:kudlacek@stoffa.cz" style="color:var(--o)">kudlacek@stoffa.cz</a></div></div><div class="ft-bot"><span>© 2025 STOFFA s.r.o.</span><span>All rights reserved</span></div></footer><div class="ck-overlay" id="ck"><div class="ck-box">
+<h3>Privacy & Cookies</h3>
+<p>We use cookies to improve your experience, analyze traffic and personalize content.</p>
+<div class="ck-toggles">
+<div class="ck-row"><div><span>Necessary</span><br><small>Always active</small></div><label><input type="checkbox" checked disabled><span class="ck-slider"></span></label></div>
+<div class="ck-row"><div><span>Analytics</span><br><small>Google Analytics</small></div><label><input type="checkbox" id="ck-an" checked><span class="ck-slider"></span></label></div>
+<div class="ck-row"><div><span>Marketing</span><br><small>Retargeting, ads</small></div><label><input type="checkbox" id="ck-mk"><span class="ck-slider"></span></label></div>
+</div>
+<div class="ck-btns"><button class="ck-accept" onclick="acceptAll()">Accept All</button><button class="ck-save" onclick="saveCk()">Save Preferences</button></div>
+</div></div><script>
+const c=document.getElementById('c'),cr=document.getElementById('cr');document.addEventListener('mousemove',e=>{c.style.left=cr.style.left=e.clientX+'px';c.style.top=cr.style.top=e.clientY+'px'});document.querySelectorAll('a,button,.pc,.gi,input,textarea').forEach(el=>{el.addEventListener('mouseenter',()=>{c.classList.add('h');cr.classList.add('h')});el.addEventListener('mouseleave',()=>{c.classList.remove('h');cr.classList.remove('h')})});
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('sc',scrollY>60);const s=document.getElementById('stt');if(s)s.classList.toggle('sh',scrollY>600)});
+function toggleMenu(){document.getElementById('mm').classList.toggle('op')}
+const obs=new IntersectionObserver(e=>{e.forEach(i=>{if(i.isIntersecting)i.target.classList.add('vis')})},{threshold:.12});document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+// GDPR Cookies
+const ckEl=document.getElementById('ck');
+if(ckEl&&!localStorage.getItem('ck_consent')){setTimeout(()=>ckEl.classList.add('show'),1200)}
+function acceptAll(){const an=document.getElementById('ck-an');const mk=document.getElementById('ck-mk');if(an)an.checked=true;if(mk)mk.checked=true;saveCk()}
+function saveCk(){const an=document.getElementById('ck-an');const mk=document.getElementById('ck-mk');const consent={necessary:true,analytics:an?an.checked:false,marketing:mk?mk.checked:false,timestamp:new Date().toISOString()};localStorage.setItem('ck_consent',JSON.stringify(consent));document.getElementById('ck').classList.remove('show')}
+</script><script>const track=document.getElementById('hcarTrack'),dots=document.querySelectorAll('.hcar-dots i');if(track&&dots.length){setInterval(()=>{const m=getComputedStyle(track).transform;if(m&&m!=='none'){const ty=parseFloat(m.split(',')[5])||0;const idx=Math.round(Math.abs(ty)/320)%5;dots.forEach((d,i)=>d.classList.toggle('ac',i===idx))}},200)}</script></body></html>
